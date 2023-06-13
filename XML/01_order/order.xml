@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<order>
+    <customer>
+        <customer-number>C001</customer-number>
+        <adress-line1>Mario Toadstool</adress-line1>
+        <adress-line2>Mushroom Castle</adress-line2>
+        <postalcode>0001</postalcode>
+        <city>Mushroom City</city>
+        <country>Mushroom Kingdom</country>
+    </customer>
+    <positions>
+        <position>
+            <article>
+                <product-number>UP001</product-number>
+                <productdescription>Mushroom</productdescription>
+            </article>
+            <ammount>3</ammount>
+        </position>
+    </positions>
+</order>
+<!-- Aritkelnummer, Preis (Rabatte), Menge, 
+Lieferadresse, Rechnungsadresse, Zahlungsmittel, Lieferinformationen, -->

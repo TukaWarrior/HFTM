@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bestellung SYSTEM "01_bestellung.dtd">
+<?xml-stylesheet type="text/xsl" href="01_bestellung.xsl" ?>
+<bestellung unsere-referenz="Fredi Hinz">
+    <auftrag nummer="13214" liefertermin="25.11.2014">
+        <position nummer="1">
+            <artikelnummer>123456.00</artikelnummer>
+            <menge>22</menge>
+        </position>
+        <position nummer="2">
+            <artikelnummer>55555.01</artikelnummer>
+            <menge>50</menge>
+        </position>
+        <position nummer="3">
+            <artikelnummer>45679.55</artikelnummer>
+            <menge>23</menge>
+        </position>
+    </auftrag>
+    
+    <auftrag nummer="13215" liefertermin="20.11.2014">
+        <position nummer="1">
+            <artikelnummer>646531.15</artikelnummer>
+            <menge>16</menge>
+        </position>
+        <position nummer="2">
+            <artikelnummer>55555.01</artikelnummer>
+            <menge>50</menge>
+        </position>
+    </auftrag>
+    
+</bestellung>

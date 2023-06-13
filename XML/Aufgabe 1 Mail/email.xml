@@ -1,0 +1,37 @@
+<?xml version="1.1" encoding="UTF-8" standalone="yes"?>
+<email>
+    <addresses>
+        <from>
+            <name>Peter Born</name>
+            <adress>peter.born@datacomm.ch</adress>
+        </from>
+        <to>
+            <recipient>
+                <name></name>
+                <adress>chmbuehler@datacomm.ch</adress>
+            </recipient>
+            <recipient>
+                <name>Baumann Ruedi</name>
+                <adress></adress>
+            </recipient>
+        </to>
+        <cc></cc>
+    </addresses>
+    <priority>normal</priority>
+    <date>05.07.03 16:50</date>
+    <subject>Modulunterlagen (GUI-Programierung)</subject>
+    <body>
+        Lieber Hetbett, lieber Ruedi,
+
+        Beiliegend - Wie versprochen - meine diesjährigen Arbeitsblätter zur GUI-
+        Programmierung in Java.
+
+        E liebe Gruess und e gueti Ziit
+
+        Peter
+    </body>
+    <attachments>
+        <attachment>GUI_Programmierung.zip</attachment>
+    </attachments>
+    <signature></signature>
+</email>

@@ -1,0 +1,17 @@
+<?xml encoding="UTF-8"?>
+<!ELEMENT bestellung (auftrag)+>
+<!ATTLIST bestellung
+  unsere-referenz CDATA #IMPLIED>
+
+<!ELEMENT auftrag (position)+>
+<!ATTLIST auftrag
+  liefertermin CDATA #REQUIRED
+  nummer CDATA #REQUIRED>
+
+<!ELEMENT position (artikelnummer,menge)>
+<!ATTLIST position
+  nummer CDATA #REQUIRED>
+
+<!ELEMENT artikelnummer (#PCDATA)>
+
+<!ELEMENT menge (#PCDATA)>

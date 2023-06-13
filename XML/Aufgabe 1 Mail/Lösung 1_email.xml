@@ -1,0 +1,20 @@
+<?xml version="1.1" encoding="UTF-8" standalone="yes"?>
+<email wichtigkeit="Normal" gesendet="05.07.2003 16:50">
+	<absender>
+		<bezeichner>Peter Born</bezeichner>
+		<adresse>peter.born@hftm.ch</adresse>
+	</absender>
+	<empfaengerliste>
+		<empfaenger typ="an">
+			<adresse>chmbuehler@datacomm.ch</adresse>
+		</empfaenger>
+		<empfaenger typ="an">
+			<bezeichner>Baumann Ruedi</bezeichner>
+		</empfaenger>
+	</empfaengerliste>
+	<betreff>Modulunterlagen (GUI_Programmierung)</betreff>
+	<inhalt>Lieber Herbert..</inhalt>
+	<anhaenge>
+		<anhang>GUI_Programmierung.zip</anhang>
+	</anhaenge>
+</email>

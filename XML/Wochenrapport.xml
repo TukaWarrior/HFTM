@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<wochenrapport
+    nummer="00127" xmlns="http://www.elko-erp.ch/wr/">
+    <mitarbeiter>
+        <id>00153</id>
+        <vorname>Luca</vorname>
+        <nachname>Bützberger</nachname>
+    </mitarbeiter>
+    <header>
+        <row1>Auftrags Nr</row1>
+        <row2>Kunde</row2>
+        <row3>Mo</row3>
+        <row4>Di</row4>
+        <row5>Mi</row5>
+        <row6><Do/row6>
+        <row7>Fr</row7>
+        <row8>Sa</row8>
+        <row9>So</row9>
+        <row10>Stunden</row10>
+    </header>
+    <header>
+        <auftrags-nummer>2014-0000001</auftrags-nummer>
+        <ihre-referenz>Fredi Hinz</ihre-referenz>
+        <auftragsdatum>21.04.2014</auftragsdatum>
+        <lieferdatum>25.05.2014</lieferdatum>
+        <unsere-referenz>Gustav Gans</unsere-referenz>
+    </auftrag>
+    <positionen xmlns:pos="http://www.hftm-erp.ch/orders/pos/">
+        <position zeile="1">
+            <pos:artikel>Bluetenpollen C30 Beifuss</pos:artikel>
+            <pos:menge>10.0</pos:menge>
+        </position>
+        <position zeile="2">
+            <pos:artikel>Bluetenpollen C30 Erle</pos:artikel>
+            <pos:artikel-id>BP-C30-E</pos:artikel-id>
+            <pos:menge>10.0</pos:menge>
+        </position>
+        <position zeile="3">
+            <pos:artikel>Bluetenpollen C30 Roggen</pos:artikel>
+            <pos:menge>10.0</pos:menge>
+        </position>
+        <position zeile="4">
+            <pos:artikel>Apotheke 42 Div</pos:artikel>
+            <pos:menge>5.0</pos:menge>
+        </position>
+        <position zeile="5">
+            <pos:artikel>Zincum metallicum D6</pos:artikel>
+            <pos:menge>20.0</pos:menge>
+        </position>
+    </positionen>
+    <zusatztext>
+        Achtung: Die Nahrungsergänzung <hervorhebung>Bluetenpollen
+        Beifuss</hervorhebung> müssen bis zum 31. August 2014
+        verbraucht werden.
+    </zusatztext>
+</lieferschein>
