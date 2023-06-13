@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="servicerapport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="termin" type="xs:date" />
+                <xs:element name="zeit" type="xs:time" />
+                <xs:element ref="objekt" />
+                <xs:element ref="kunde" />
+                <xs:element ref="rechnung" />
+                <xs:element ref="erteiltam" />
+                <xs:element ref="erteiltvon" />
+                <xs:element ref="auftrag" />
+                <xs:element ref="bemerkung" />
+                <xs:element ref="arbeitszeit" />
+                <xs:element ref="material" />
+                <xs:element ref="checkbox" />
+                <xs:element ref="unterschrift" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="objekt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string" />
+                <xs:element name="adresse" type="xs:String" />
+                <xs:element name="ort" type="xs:String" />
+                <xs:element name="telefonnummer" type="xs:integer" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="kunde">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string" />
+                <xs:element name="adresse" type="xs:String" />
+                <xs:element name="ort" type="xs:String" />
+                <xs:element name="telefonnummer" type="xs:integer" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="rechnung">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string" />
+                <xs:element name="adresse" type="xs:String" />
+                <xs:element name="ort" type="xs:String" />
+                <xs:element name="telefonnummer" type="xs:integer" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    </xs:element name="erteiltam" type="xs:Date"/>
+    </xs:element name="erteiltvon" type="xs:string"/>
+
+    </xs:element name="auftrag" type="xs:string"/>
+    </xs:element name="bemerkung" type="xs:string"/>
+
+
+
+    <xs:element name="arbeitszeit">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="zeile" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                    <xs:element name="monteur" type="xs:string" />
+                    <xs:element name="datum" type="xs:Date" />
+                    <xs:element name="arbeitszeit" type="xs:double" />
+                    <xs:element name="erledigtearbeit" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:complexType>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="checkbox">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="regie" type="xs:boolean"/>
+                <xs:element name="garantie" type="xs:boolean" />
+                <xs:element name="ausmass" type="xs:boolean" />
+                <xs:element name="notfalleinsatz" type="xs:boolean" />
+                <xs:element name="arbeitfertig" type="xs:boolean" />
+            </xs:element>
+        </xs:complexType>
+    <checkbox>
+
+    <xs:element name="material">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="zeile" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="bezeichnung" type="xs:string" />
+                            <xs:element name="em-nummer" type="xs:integer" />
+                            <xs:element name="montageart" type="xs:string" />
+                            <xs:element name="anzahl" type="xs:integer" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:complexType>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="unterschrift">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ort" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="datum" type="xs:Date" minOccurs="1" maxOccurs="1" />
+                <xs:element name="unterschrift-kunde" type="xs:string" minOccurs="1" maxOccurs="1" />
+                <xs:element name="unterschrift-monteur" type="xs:string" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

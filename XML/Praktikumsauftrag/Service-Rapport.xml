@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicerapport xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+    xsi:noNamespaceSchemaLocation="Service-Rapport.xsd">
+    <termin>13.06.2023</termin>
+    <zeit>13:00</zeit>
+
+    <objekt> <!-- Objektadresse / Ausführungsadresse -->
+        <name>Max Mustermann</name>
+        <adresse>Musterstrasse 1</adresse>
+        <ort>Musterhausen</ort>
+        <telefonnummer>0629650001</telefonnummer>
+    </objekt>
+    <kunde> <!-- Kundenadresse -->
+        <name>Beat Bàrtschi</name>
+        <adresse>Buchenweg 2</adresse>
+        <ort>Bern</ort>
+        <telefonnummer>0629650002</telefonnummer>
+    </kunde>
+    <rechnung> <!-- Rechnungsadresse -->
+        <name>Clemens</name>
+        <adresse>Dorfstrasse 3</adresse>
+        <ort>Bern</ort>
+        <telefonnummer>0629650003</telefonnummer>
+    </rechnung>
+
+    <erteiltam>10.06.2023</erteiltam>
+    <erteiltvon>Max Mustermann </erteiltvon>
+
+    <auftrag>Steckdose defekt</auftrag>
+    <bemerkungen>Kunde nicht zu hause. Schlüssel in Briefkasten.</bemerkungen>
+
+    <arbeitszeit> <!-- Tabelle der benötigten Arbeitszeit -->
+        <zeile>
+            <monteur>Luca Bützberger</monteur>
+            <datum>13.06.2023</datum>
+            <arbeitszeit>3.0</arbeitszeit>
+            <erledigtearbeit>Steckdose ausgewechselt</erledigtearbeit>
+        </zeile>
+    </arbeitszeit>
+
+    <material> <!-- Tabelle des verbrauchten Materials -->
+        <zeile>
+            <bezeichnung>AP 3xT13 Feller</bezeichnung>
+            <em-nummer>153256987</em-nummer>
+            <montageart>A3</montageart>
+            <anzahl>1</anzahl>
+        </zeile>
+    </material>
+
+    <!-- Checkboxen zum ankreuzen -->
+    <checkbox>
+        <regie>false</regie>
+        <garantie>false</garantie>
+        <ausmass>true</ausmass>
+        <notfalleinsatz>false</notfalleinsatz>
+        <arbeitfertig>true</arbeitfertig>
+    </checkbox>
+
+    <!-- Unterschriften -->
+    <unterschrift>
+        <ort>Madiswil</ort>
+        <datum>13.06.2023</datum>
+        <unterschrift-kunde></unterschrift-kunde>
+        <unterschrift-monteur></unterschrift-monteur>
+    </unterschrift>
+</servicerapport>
+    
