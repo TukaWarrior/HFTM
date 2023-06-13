@@ -17,6 +17,10 @@ public class App extends Application {
 
     private static Scene scene;
 
+    public static void main(String[] args) {
+        launch();
+    }
+
     private static ObservableList<Prisoner> prisonerList = FXCollections.observableArrayList();
 
 	public App() {
