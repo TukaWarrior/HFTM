@@ -1,0 +1,6 @@
+Dossier(DossierID, Text, MAID NOT NULL UNIQUE)
+Mitarbeiter(MAID, Name, TelNr, DossierID NULL)
+Beratung(Stundenansatz, Stundenzahl, MAID NOT NULL UNIQUE)
+Kunde(Rechnugnsadresse, BeratungsID UNIQUE)
+Lieferant(Bankverbindung, FirmenID, Name, Adresse)
+Firma(FirmenID, Name, Adresse)

@@ -1,0 +1,42 @@
+Lösungsvorschlag zu Aufgabe 2
+a) Vererbung als 'parent and children' transformiert
+
+Dossier(DossierID, Text, MAID NOT NULL UNIQUE)
+
+Mitarbeiter(MAID, Name, TelNr)
+
+Arbeitspartner(MAID, PartnerID NOT NULL UNIQUE)
+
+Firma(FirmenID, Name, Adresse)
+
+Kunde(FirmenID, Rechnungsadresse)
+
+Lieferant(FirmenID, Bankverbindung)
+
+Beratung(MAID, FirmenID UNIQUE, Stundenansatz, Stundenzahl) -> UNIQUE da pro Firma nur eine Beratung verfasst werden darf. Primärschlüssel regelt Eindeutigkeit auf Kombination bei zusammengesetzten Schlüsseln.
+
+b) Vererbung als 'only children' transformiert
+
+Dossier(DossierID, Text, MAID NOT NULL UNIQUE)
+
+Mitarbeiter(MAID, Name, TelNr)
+
+Arbeitspartner(MAID, PartnerID NOT NULL UNIQUE)
+
+Kunde(KundenID, Name, Adresse, Rechnungsadresse)
+
+Lieferant(LieferantenID, Name, Adresse, Bankverbindung)
+
+Beratung(MAID, KundenID UNIQUE, Stundenansatz, Stundenzahl)
+
+c) Vererbung als 'only parent' transformiert
+
+Dossier(DossierID, Text, MAID NOT NULL UNIQUE)
+
+Mitarbeiter(MAID, Name, TelNr)
+
+Arbeitspartner(MAID, PartnerID NOT NULL UNIQUE)
+
+Firma(FirmenID, Name, Adresse, Rechnungsadresse, Bankverbindung)
+
+Beratung(MAID, FirmenID UNIQUE, Stundenansatz, Stundenzahl)

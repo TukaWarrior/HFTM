@@ -1,0 +1,384 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -7,
+    "scrollLeft": -48,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": false,
+      "columnComment": false,
+      "columnDataType": true,
+      "columnDefault": false,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Mitarbeiter",
+        "comment": "",
+        "columns": [
+          {
+            "name": "MitarbeiterID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 76.4072265625,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "98838dc1-fc7d-4aa7-b958-bf5e07f2d09b"
+          },
+          {
+            "name": "PartnerID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "0dc7a00d-7d6e-44bc-bb38-2fb383d44a9d"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 49,
+          "top": 117,
+          "zIndex": 140,
+          "widthName": 63.4072265625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "663dc596-8071-4591-9808-2cf4100c5b03"
+      },
+      {
+        "name": "Auftrag",
+        "comment": "",
+        "columns": [
+          {
+            "name": "AuftragID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "0f93040a-69aa-48fc-a701-d450163b062f"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 416,
+          "top": 133,
+          "zIndex": 142,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "0d431cb6-24a9-4416-98c8-16b4e5d10a86"
+      },
+      {
+        "name": "Mitarbeiter_Auftrag",
+        "comment": "",
+        "columns": [
+          {
+            "name": "AuftragID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "94ab7092-9f84-418b-8890-dff2b041ee8b"
+          },
+          {
+            "name": "MitarbeiterID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 76.4072265625,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "fa6d131c-3f02-4206-8b47-e0b28a5f1e06"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 135,
+          "top": 404,
+          "zIndex": 144,
+          "widthName": 112.55078125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "1c26cb32-ce5d-4887-a03e-4cf34747124e"
+      },
+      {
+        "name": "Position",
+        "comment": "",
+        "columns": [
+          {
+            "name": "AuftragID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "fe1b6e85-cc8e-403c-af09-625306cd419e"
+          },
+          {
+            "name": "PositionID",
+            "comment": "",
+            "dataType": "NUMBER(8",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.2490234375,
+              "widthComment": 60,
+              "widthDataType": 69.89453125,
+              "widthDefault": 60
+            },
+            "id": "e81d0173-13e9-4e1a-ac08-efb4b073bdd9"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 404,
+          "top": 394,
+          "zIndex": 145,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "930640fa-3dbb-4a06-afa8-49cf025a23f1"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0d431cb6-24a9-4416-98c8-16b4e5d10a86",
+          "columnIds": [
+            "0f93040a-69aa-48fc-a701-d450163b062f"
+          ],
+          "x": 416,
+          "y": 177.75,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "1c26cb32-ce5d-4887-a03e-4cf34747124e",
+          "columnIds": [
+            "94ab7092-9f84-418b-8890-dff2b041ee8b"
+          ],
+          "x": 320.72314453125,
+          "y": 404,
+          "direction": "top"
+        },
+        "constraintName": "fk_auftrag_to_mitarbeiter_auftrag",
+        "visible": true,
+        "id": "ea7652fe-08ef-42b5-807d-d26eb7dacca9"
+      },
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "663dc596-8071-4591-9808-2cf4100c5b03",
+          "columnIds": [
+            "98838dc1-fc7d-4aa7-b958-bf5e07f2d09b"
+          ],
+          "x": 172.8154296875,
+          "y": 227,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "1c26cb32-ce5d-4887-a03e-4cf34747124e",
+          "columnIds": [
+            "fa6d131c-3f02-4206-8b47-e0b28a5f1e06"
+          ],
+          "x": 196.90771484375,
+          "y": 404,
+          "direction": "top"
+        },
+        "constraintName": "fk_mitarbeiter_to_mitarbeiter_auftrag",
+        "visible": true,
+        "id": "1c2995a6-ba1e-4256-bc5d-ceb7b0bfca7d"
+      },
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0d431cb6-24a9-4416-98c8-16b4e5d10a86",
+          "columnIds": [
+            "0f93040a-69aa-48fc-a701-d450163b062f"
+          ],
+          "x": 531.61181640625,
+          "y": 222.5,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "930640fa-3dbb-4a06-afa8-49cf025a23f1",
+          "columnIds": [
+            "fe1b6e85-cc8e-403c-af09-625306cd419e"
+          ],
+          "x": 520.236328125,
+          "y": 394,
+          "direction": "top"
+        },
+        "constraintName": "fk_auftrag_to_position",
+        "visible": true,
+        "id": "b57660bb-ba63-46ef-8721-df1e670b3958"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroOne",
+        "startRelationshipType": "Ring",
+        "start": {
+          "tableId": "663dc596-8071-4591-9808-2cf4100c5b03",
+          "columnIds": [
+            "98838dc1-fc7d-4aa7-b958-bf5e07f2d09b"
+          ],
+          "x": 276.630859375,
+          "y": 117,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "663dc596-8071-4591-9808-2cf4100c5b03",
+          "columnIds": [
+            "0dc7a00d-7d6e-44bc-bb38-2fb383d44a9d"
+          ],
+          "x": 296.630859375,
+          "y": 137,
+          "direction": "right"
+        },
+        "constraintName": "fk_mitarbeiter_to_mitarbeiter",
+        "visible": true,
+        "id": "78213734-c10f-4bd9-b7db-cc4bc5b5b7ef"
+      }
+    ]
+  }
+}
