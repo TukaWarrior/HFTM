@@ -1,0 +1,339 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -1,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": false,
+      "columnComment": false,
+      "columnDataType": true,
+      "columnDefault": false,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "mitarbeiter",
+        "comment": "",
+        "columns": [
+          {
+            "name": "mitarbeiter-id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.8544921875,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "0a8c731f-8443-4116-a28d-ddffa53c1b00"
+          },
+          {
+            "name": "m-name",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "844369d8-f78b-4c82-b367-72556938488c"
+          },
+          {
+            "name": "m-telefonnummer",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 103.8671875,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "16be81fb-e931-48d7-8aa2-cc70059b182c"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 42.6672,
+          "top": 32.0903,
+          "zIndex": 2,
+          "widthName": 63.4072265625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "8259eb85-d6d1-4859-acf6-320a1c150f41"
+      },
+      {
+        "name": "kunde",
+        "comment": "",
+        "columns": [
+          {
+            "name": "kunde-id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "232a250d-0f9a-4934-8979-31b76b44cf06"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "9174a6f2-6938-4109-a634-36ea43a031a1"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 44.5867,
+          "top": 349.7556,
+          "zIndex": 3,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "728e201a-69d4-44d1-8a1b-f55d322cfe14"
+      },
+      {
+        "name": "zusammenarbeit",
+        "comment": "",
+        "columns": [
+          {
+            "name": "mitarbeiter-id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 77.8544921875,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "fed54242-c674-497d-b225-7c5248a440c3"
+          },
+          {
+            "name": "kunde-id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "d58d3c67-5e73-4897-88d4-bf97e0ea9cc1"
+          },
+          {
+            "name": "stundensatz",
+            "comment": "",
+            "dataType": "NUMBER(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.103515625,
+              "widthComment": 60,
+              "widthDataType": 81.45361328125,
+              "widthDefault": 60
+            },
+            "id": "9dac9b14-a860-459c-8122-324e188ed358"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 450.081,
+          "top": 188.0857,
+          "zIndex": 1,
+          "widthName": 98.09716796875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "a48dbb0f-635b-437d-bb0a-6a906defc60c"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "8259eb85-d6d1-4859-acf6-320a1c150f41",
+          "columnIds": [
+            "0a8c731f-8443-4116-a28d-ddffa53c1b00"
+          ],
+          "x": 338.48311796875,
+          "y": 97.3403,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "a48dbb0f-635b-437d-bb0a-6a906defc60c",
+          "columnIds": [
+            "fed54242-c674-497d-b225-7c5248a440c3"
+          ],
+          "x": 450.081,
+          "y": 220.7107,
+          "direction": "left"
+        },
+        "constraintName": "fk_mitarbeiter_to_zusammenarbeit",
+        "visible": true,
+        "id": "54bbeef4-83bb-4d0d-a9d8-95b0d8b47574"
+      },
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "728e201a-69d4-44d1-8a1b-f55d322cfe14",
+          "columnIds": [
+            "232a250d-0f9a-4934-8979-31b76b44cf06"
+          ],
+          "x": 296.53543046875,
+          "y": 404.7556,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "a48dbb0f-635b-437d-bb0a-6a906defc60c",
+          "columnIds": [
+            "d58d3c67-5e73-4897-88d4-bf97e0ea9cc1"
+          ],
+          "x": 450.081,
+          "y": 285.9607,
+          "direction": "left"
+        },
+        "constraintName": "fk_kunde_to_zusammenarbeit",
+        "visible": true,
+        "id": "b1bcf543-7bde-4c7d-84dd-275272ab7dbc"
+      }
+    ]
+  }
+}
