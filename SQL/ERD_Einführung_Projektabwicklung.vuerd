@@ -1,0 +1,431 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -8,
+    "scrollLeft": -213,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": false,
+      "columnComment": false,
+      "columnDataType": true,
+      "columnDefault": false,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Mitarbeiter",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "c69d81d1-2747-456d-8368-0b804d189e2d"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "fc97f879-58bc-4d89-8923-1ff2710d38ea"
+          },
+          {
+            "name": "ausbildung",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.88623046875,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "f8ce0c58-a3d0-45e2-9944-0286bbba9825"
+          },
+          {
+            "name": "gehalt",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "a4bf444a-5d94-444b-af76-bf71c35a1316"
+          },
+          {
+            "name": "Adr-Strasse",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.630859375,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "6288a0f8-6b07-4704-93e7-76963e13c39a"
+          },
+          {
+            "name": "Adr-StrassenNr",
+            "comment": "",
+            "dataType": "VARCHAR(6)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 91.578125,
+              "widthComment": 60,
+              "widthDataType": 80.48876953125,
+              "widthDefault": 60
+            },
+            "id": "469c1a0a-6d60-4ba1-b0d1-a3a7a0a9364d"
+          },
+          {
+            "name": "Adr-PLZ",
+            "comment": "",
+            "dataType": "NUMBER(4)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "7512e9ec-42b5-445f-b40a-4494f8a89879"
+          },
+          {
+            "name": "Adr-Land",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "493e21fb-5976-477e-8afb-51182ef501cf"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 655,
+          "top": 233,
+          "zIndex": 146,
+          "widthName": 63.4072265625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "68fbd3c5-3e96-4d10-a456-edfa032d20ac"
+      },
+      {
+        "name": "Projekt",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "c4a8d462-e861-4110-85e8-a9ecddbe2122"
+          },
+          {
+            "name": "Bezeichnung",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.1689453125,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "e80a484f-8162-4ff2-8964-8fe7da98f47b"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 235,
+          "top": 34,
+          "zIndex": 141,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "cd00c464-37d5-404c-b33a-f3ade05701e7"
+      },
+      {
+        "name": "Projektmitarbeit",
+        "comment": "",
+        "columns": [
+          {
+            "name": "projekt-id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "29fdba66-d486-41bf-8803-80a8b07a0b42"
+          },
+          {
+            "name": "mitarbeiter-id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 77.8544921875,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "83457a78-510f-48f9-b37b-9f3d6de770ae"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 259,
+          "top": 291,
+          "zIndex": 145,
+          "widthName": 92.30810546875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "4a242f26-d420-41c2-bb74-f37e7e28fae0"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "68fbd3c5-3e96-4d10-a456-edfa032d20ac",
+          "columnIds": [
+            "c69d81d1-2747-456d-8368-0b804d189e2d"
+          ],
+          "x": 655,
+          "y": 349.5,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "4a242f26-d420-41c2-bb74-f37e7e28fae0",
+          "columnIds": [
+            "29fdba66-d486-41bf-8803-80a8b07a0b42"
+          ],
+          "x": 508.078125,
+          "y": 346,
+          "direction": "right"
+        },
+        "constraintName": "fk_mitarbeiter_to_projektmitarbeit",
+        "visible": true,
+        "id": "1a017c33-ebdc-43bb-aa85-04d5a1a59cc5"
+      },
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "cd00c464-37d5-404c-b33a-f3ade05701e7",
+          "columnIds": [
+            "c4a8d462-e861-4110-85e8-a9ecddbe2122"
+          ],
+          "x": 369.558837890625,
+          "y": 144,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "4a242f26-d420-41c2-bb74-f37e7e28fae0",
+          "columnIds": [
+            "83457a78-510f-48f9-b37b-9f3d6de770ae"
+          ],
+          "x": 383.5390625,
+          "y": 291,
+          "direction": "top"
+        },
+        "constraintName": "fk_projekt_to_projektmitarbeit",
+        "visible": true,
+        "id": "709a12d3-5601-49d0-a4d8-aa8ff9d88b58"
+      }
+    ]
+  }
+}

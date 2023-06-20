@@ -1,0 +1,346 @@
+{
+  "canvas": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "show": {
+      "tableComment": false,
+      "columnComment": false,
+      "columnDataType": true,
+      "columnDefault": false,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "Oracle",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    }
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "mitarbeiter",
+        "comment": "",
+        "columns": [
+          {
+            "name": "mitarbeiter-id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 78,
+              "widthComment": 60,
+              "widthDataType": 74,
+              "widthDefault": 60
+            },
+            "id": "cb6619da-7991-6edc-461a-8f360489bb16"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "VARCHAR2(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 95,
+              "widthDefault": 60
+            },
+            "id": "32347bba-1152-322a-2bca-5b3de3b6c54f"
+          },
+          {
+            "name": "vorname",
+            "comment": "",
+            "dataType": "VACHAR2(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 86,
+              "widthDefault": 60
+            },
+            "id": "01de5afe-890b-c529-8e7a-f5b379758785"
+          },
+          {
+            "name": "telefonnummer",
+            "comment": "",
+            "dataType": "VARCHAR2(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 89,
+              "widthComment": 60,
+              "widthDataType": 95,
+              "widthDefault": 60
+            },
+            "id": "6ffa1cff-1395-5489-eab5-a847e89b8d87"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 46.66667275958563,
+          "top": 236.2499945859116,
+          "zIndex": 172,
+          "widthName": 63,
+          "widthComment": 60
+        },
+        "id": "90c401bc-2fa0-e3f2-3e13-f9faf7bc3b03"
+      },
+      {
+        "name": "kunde",
+        "comment": "",
+        "columns": [
+          {
+            "name": "kunde-id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74,
+              "widthDefault": 60
+            },
+            "id": "4529745b-a7d9-f9a6-447c-7c250c237e73"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "VACHAR2(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 86,
+              "widthDefault": 60
+            },
+            "id": "282db809-d4ae-e1eb-06f6-ff73ee55bbc7"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 812.916642311549,
+          "top": 256.66666044129306,
+          "zIndex": 168,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "40ad4fff-4be0-89a5-da38-0a14f3d12a85"
+      },
+      {
+        "name": "einsatz",
+        "comment": "",
+        "columns": [
+          {
+            "name": "mitarbeiter-id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 78,
+              "widthComment": 60,
+              "widthDataType": 74,
+              "widthDefault": 60
+            },
+            "id": "fe739748-98ea-2994-9d55-ac21ce4cd7fd"
+          },
+          {
+            "name": "kunde-id",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74,
+              "widthDefault": 60
+            },
+            "id": "e8bb8cc2-467e-8aee-8874-cef9282c7118"
+          },
+          {
+            "name": "stundensatz",
+            "comment": "",
+            "dataType": "NUMBER(5,2)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72,
+              "widthComment": 60,
+              "widthDataType": 85,
+              "widthDefault": 60
+            },
+            "id": "1ace4924-772d-ee0a-7b4f-4055be8b9dc9"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 428.333324260182,
+          "top": 246.249994188548,
+          "zIndex": 161,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "81eb7d56-e81c-b618-e2c5-3071bbce60fb"
+      }
+    ]
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": true,
+        "start": {
+          "tableId": "90c401bc-2fa0-e3f2-3e13-f9faf7bc3b03",
+          "columnIds": [
+            "cb6619da-7991-6edc-461a-8f360489bb16"
+          ],
+          "x": 327.66667275958565,
+          "y": 311.7499945859116,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "81eb7d56-e81c-b618-e2c5-3071bbce60fb",
+          "columnIds": [
+            "fe739748-98ea-2994-9d55-ac21ce4cd7fd"
+          ],
+          "x": 428.333324260182,
+          "y": 311.499994188548,
+          "direction": "left"
+        },
+        "id": "7624356d-978a-8c5a-4474-60f00bdbeed4",
+        "relationshipType": "ZeroN"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "40ad4fff-4be0-89a5-da38-0a14f3d12a85",
+          "columnIds": [
+            "4529745b-a7d9-f9a6-447c-7c250c237e73"
+          ],
+          "x": 812.916642311549,
+          "y": 311.66666044129306,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "81eb7d56-e81c-b618-e2c5-3071bbce60fb",
+          "columnIds": [
+            "e8bb8cc2-467e-8aee-8874-cef9282c7118"
+          ],
+          "x": 688.333324260182,
+          "y": 311.499994188548,
+          "direction": "right"
+        },
+        "id": "a16a4a2e-f526-f35a-5069-e6b8f3660ddc",
+        "relationshipType": "ZeroN"
+      }
+    ]
+  }
+}
