@@ -14,7 +14,6 @@ public class PrisonerEditController {
     public void setPrisoner(Prisoner prisoner) {
         this.prisoner = prisoner;
 
-        // Schreibt den vorherigen Wert ins Textfeld, bevor dieses editiert wird
         firstnameField.setText(prisoner.getFirstname());
         lastnameField.setText(prisoner.getLastname());
     }
