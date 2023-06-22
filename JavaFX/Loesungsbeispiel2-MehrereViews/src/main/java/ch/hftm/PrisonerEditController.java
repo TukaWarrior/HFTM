@@ -11,7 +11,7 @@ public class PrisonerEditController {
 
     private Prisoner prisoner;
 
-    public void setPrisoner(Prisoner prisoner) {
+    public void setPrioner(Prisoner prisoner) {
         this.prisoner = prisoner;
 
         firstnameField.setText(prisoner.getFirstname());
