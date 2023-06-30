@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lieferschein
+        nummer="L2014-0000035" xmlns="http://www.hftm-erp.ch/orders/">
+    <lieferadresse>
+        <adresszeile1>Mir egal GmbH</adresszeile1>
+        <strasse>Lagerstrasse 18</strasse>
+        <plz>4500</plz>
+        <ort>Solothurn</ort>
+    </lieferadresse>
+    <verkaufer>
+        <adresszeile1>Martholer AG</adresszeile1>
+        <adresszeile2>Business-Center BS</adresszeile2>
+        <strasse>Dorfstrasse 18</strasse>
+        <plz>4010</plz>
+        <ort>Basel</ort>
+    </verkaufer>
+    <auftrag>
+        <auftrags-nummer>2014-0000001</auftrags-nummer>
+        <ihre-referenz>Fredi Hinz</ihre-referenz>
+        <auftragsdatum>21.04.2014</auftragsdatum>
+        <lieferdatum>25.05.2014</lieferdatum>
+        <unsere-referenz>Gustav Gans</unsere-referenz>
+    </auftrag>
+    <positionen xmlns:pos="http://www.hftm-erp.ch/orders/pos/">
+        <position zeile="1">
+            <pos:artikel>Bluetenpollen C30 Beifuss</pos:artikel>
+            <pos:menge>10.0</pos:menge>
+        </position>
+        <position zeile="2">
+            <pos:artikel>Bluetenpollen C30 Erle</pos:artikel>
+            <pos:artikel-id>BP-C30-E</pos:artikel-id>
+            <pos:menge>10.0</pos:menge>
+        </position>
+        <position zeile="3">
+            <pos:artikel>Bluetenpollen C30 Roggen</pos:artikel>
+            <pos:menge>10.0</pos:menge>
+        </position>
+        <position zeile="4">
+            <pos:artikel>Apotheke 42 Div</pos:artikel>
+            <pos:menge>5.0</pos:menge>
+        </position>
+        <position zeile="5">
+            <pos:artikel>Zincum metallicum D6</pos:artikel>
+            <pos:menge>20.0</pos:menge>
+        </position>
+    </positionen>
+    <zusatztext>
+        Achtung: Die Nahrungsergänzung <hervorhebung>Bluetenpollen
+        Beifuss</hervorhebung> müssen bis zum 31. August 2014
+        verbraucht werden.
+    </zusatztext>
+</lieferschein>
