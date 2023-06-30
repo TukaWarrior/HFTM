@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lieferschein nummer="L2014-0000035">
+    <lieferadresse>
+        <adresszeile1>Mir egal GmbH</adresszeile1>
+        <strasse>Lagerstrasse 18</strasse>
+        <plz>4500</plz>
+        <ort>Solothurn</ort>
+    </lieferadresse>
+    <auftrag>
+        <ihre-referenz>Fredi Hinz</ihre-referenz>
+        <lieferdatum>25.05.2014</lieferdatum>
+        <unsere-referenz>Gustav Gans</unsere-referenz>
+    </auftrag>
+    <positionen>
+        <position zeile="1">
+            <artikel>Bluetenpollen C30 Beifuss</artikel>
+            <menge>10.0</menge>
+        </position>
+        <position zeile="2">
+            <artikel>Bluetenpollen C30 Erle</artikel>
+            <artikel-id>BP-C30-E</artikel-id>
+            <menge>10.0</menge>
+        </position>
+        <position zeile="3">
+            <artikel>Bluetenpollen C30 Roggen</artikel>
+            <menge>10.0</menge>
+        </position>
+    </positionen>
+</lieferschein>
