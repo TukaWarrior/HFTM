@@ -1,0 +1,15 @@
+
+In der Klinik gibt es verschiedenste Mitarbeiter welche unterschiedliche Berufe haben. Alle Ärtzte
+können mit einem Patienten einen Termin abmachen. Der Patient selber hat immer eine Krankenakte welche nach jedem Besuch geändert werden kann.
+Die Mitarbeiter können auch andere Berufe haben. Nur die Ärtzte können Termine haben. Jeder Patient ist mit dem Vornamen und Nachnamen zu erkennen.
+Jeder Mitarbeiter ist auch mit dem Nachnamen und Vornamen zu erkennen. Die Krankenakte hat nur einen Beschrieb. Der Patient kann nur eine Krankenakte haben.
+
+Verbesserungsvorschlag
+Berufe werden in einer eigenen Tabelle aufgenommen. Diese werden mit einer BerufsID und Beschreibung deklariert.
+Jeder Mitarbeiter in der Mitarbeiter Tabelle hat eine Referenz auf einen Beruf.
+
+Termine werden genauer deklariert. Date und Time sind nun getrennt.
+
+Ärzte werden in einer neuen Tabelle beschrieben. 
+In ihr wird die arzt id, Name und Vorname vermerkt. Ein Mitarbeiter kann eine Referenz zur Arzt Tabelle besitzen, wenn dieser den netsprechenden Job besitzt.
+Patienten besitzen eine Referenz zu einem Arzt.

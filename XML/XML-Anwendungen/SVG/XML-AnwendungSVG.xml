@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>My first SVG</h1>
+
+        <svg width="1000" height="1000">
+            <circle cx="200" cy="200" r="100
+   " stroke="black" stroke-width="4" fill="Salmon" />
+
+            <circle cx="240" cy="180" r="20
+   " stroke="black" stroke-width="4" fill="white" />
+
+            <circle cx="160" cy="180" r="20
+   " stroke="black" stroke-width="4" fill="white" />
+
+            <circle cx="160" cy="180" r="5
+   " fill="black" />
+
+            <circle cx="240" cy="180" r="5
+   " fill="black" />
+
+            <rect x="135" y="160" width="50" height="40"
+                  style="fill:transparent;stroke:black;stroke-width:4;opacity:1" />
+
+            <rect x="215" y="160" width="50" height="40"
+                  style="fill:transparent;stroke:black;stroke-width:4;opacity:1" />
+
+            <line x1="185" y1="175" x2="215" y2="175" style="stroke:rgb(0,0,0);stroke-width:4" />
+        </svg>
+
+    </body>
+</html>
