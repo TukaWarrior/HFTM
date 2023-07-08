@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="505b54d4-1e2a-4a67-9d25-d9e7b0726048" name="Changes" comment="" />
+    <list default="true" id="505b54d4-1e2a-4a67-9d25-d9e7b0726048" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/aufgabe04c.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aufgabe04c.2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Testwebsite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/resources/09k_Radar_LOL.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/web.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe4.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe4.2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aufgabe4.2test.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,10 +40,15 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/lucab/Repositories/hftm_oop1_JavaFXProjectWork",
+    "last_opened_file_path": "C:/Users/lucab/Repositories/HFTM/HTML",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucab\Repositories\HFTM\HTML" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
