@@ -1,0 +1,542 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -63,
+    "scrollLeft": -121,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": false,
+      "columnComment": false,
+      "columnDataType": true,
+      "columnDefault": false,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Mitarbeiter",
+        "comment": "",
+        "columns": [
+          {
+            "name": "MitarbeiterID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 76.4072265625,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "f78a386c-b6d4-4646-b4cb-95f0b6d5988f"
+          },
+          {
+            "name": "Nachname",
+            "comment": "",
+            "dataType": "VARCHAR2(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.8671875,
+              "widthComment": 60,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            },
+            "id": "e293d17e-1bc5-4b3d-bc0b-92eae8c34516"
+          },
+          {
+            "name": "Vorname",
+            "comment": "",
+            "dataType": "VARCHAR2(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            },
+            "id": "c7472cf3-3af5-4cd0-9039-65e2a8dd5f2b"
+          },
+          {
+            "name": "Beruf",
+            "comment": "",
+            "dataType": "VARCHAR2(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            },
+            "id": "cddaa027-3b15-47e5-86b9-10dfceeba898"
+          },
+          {
+            "name": "Termin",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "aa06cf3d-7569-4ddc-94d3-e02f0fb01893"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 203,
+          "top": 103,
+          "zIndex": 221,
+          "widthName": 63.4072265625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "c2317c7e-0d04-4dac-b0a8-e7b2a137bd1d"
+      },
+      {
+        "name": "Patient",
+        "comment": "",
+        "columns": [
+          {
+            "name": "PatientID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "a40b81a2-7b6f-491a-b7a1-b82b24c07bdd"
+          },
+          {
+            "name": "Nachname",
+            "comment": "",
+            "dataType": "VARCHAR2(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.8671875,
+              "widthComment": 60,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            },
+            "id": "d95e6aa6-a2fc-4b76-8a45-3b4fcf29c5c7"
+          },
+          {
+            "name": "Vorname",
+            "comment": "",
+            "dataType": "VARCHAR2(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            },
+            "id": "ab846284-7e1e-4c46-9b05-b19cbac77fe5"
+          },
+          {
+            "name": "AktenID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "09991d58-1941-4c16-a298-e4924bcd4d34"
+          },
+          {
+            "name": "Termin",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6e394846-b7e4-48c8-804d-a428d2a43acd"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 581,
+          "top": 489,
+          "zIndex": 219,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "13b6f590-9326-433b-a462-2c491aaaf06d"
+      },
+      {
+        "name": "Krankenakte",
+        "comment": "",
+        "columns": [
+          {
+            "name": "AktenID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "a49baa05-d4aa-4ea5-b999-1d6abc4c645a"
+          },
+          {
+            "name": "Beschrieb",
+            "comment": "",
+            "dataType": "VARCHAR2(10000)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 116.638671875,
+              "widthDefault": 60
+            },
+            "id": "ef27af3f-b85b-4871-944a-60455fb69a0d"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 554,
+          "top": 190,
+          "zIndex": 226,
+          "widthName": 74.99169921875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "3a9bbebe-72e4-45ec-966d-38393a49027f"
+      },
+      {
+        "name": "Termin",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Termin",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "78059bcc-4422-4866-b499-11f432dca9c5"
+          },
+          {
+            "name": "PatientID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "1872725f-bc37-45ab-8c43-df22398a4bd0"
+          },
+          {
+            "name": "MitarbeiterID",
+            "comment": "",
+            "dataType": "NUMBER(8)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 76.4072265625,
+              "widthComment": 60,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "3e7b8d9b-9264-4875-b746-52170fbd48c9"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 196,
+          "top": 481,
+          "zIndex": 210,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "1306824f-7587-4caf-96e5-62672fe9d02c"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "3a9bbebe-72e4-45ec-966d-38393a49027f",
+          "columnIds": [
+            "a49baa05-d4aa-4ea5-b999-1d6abc4c645a"
+          ],
+          "x": 690.8193359375,
+          "y": 300,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "13b6f590-9326-433b-a462-2c491aaaf06d",
+          "columnIds": [
+            "09991d58-1941-4c16-a298-e4924bcd4d34"
+          ],
+          "x": 713.02294921875,
+          "y": 489,
+          "direction": "top"
+        },
+        "constraintName": "fk_krankenakte_to_patient",
+        "visible": true,
+        "id": "42103642-87cf-4311-b450-26cd87df8f7a"
+      },
+      {
+        "identification": true,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "13b6f590-9326-433b-a462-2c491aaaf06d",
+          "columnIds": [
+            "a40b81a2-7b6f-491a-b7a1-b82b24c07bdd"
+          ],
+          "x": 581,
+          "y": 574.75,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "1306824f-7587-4caf-96e5-62672fe9d02c",
+          "columnIds": [
+            "1872725f-bc37-45ab-8c43-df22398a4bd0"
+          ],
+          "x": 443.630859375,
+          "y": 546.25,
+          "direction": "right"
+        },
+        "constraintName": "fk_patient_to_termin",
+        "visible": true,
+        "id": "3e6279e1-d44f-4b70-8624-6e898efd0845"
+      },
+      {
+        "identification": true,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "c2317c7e-0d04-4dac-b0a8-e7b2a137bd1d",
+          "columnIds": [
+            "f78a386c-b6d4-4646-b4cb-95f0b6d5988f"
+          ],
+          "x": 340.79296875,
+          "y": 274.5,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "1306824f-7587-4caf-96e5-62672fe9d02c",
+          "columnIds": [
+            "3e7b8d9b-9264-4875-b746-52170fbd48c9"
+          ],
+          "x": 319.8154296875,
+          "y": 481,
+          "direction": "top"
+        },
+        "constraintName": "fk_mitarbeiter_to_termin",
+        "visible": true,
+        "id": "97f4339b-72cf-472a-9a18-9b58ac49efd9"
+      }
+    ]
+  }
+}
