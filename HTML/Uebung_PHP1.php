@@ -26,6 +26,7 @@
     echo "Telefonnummer     " . "<strong>" . "$telefon" . "</strong><br>";
     echo "Faxnummer         " . "<strong>" . "$fax" . "</strong><br>";
     ?>
+    
 </body>
 
 </html>

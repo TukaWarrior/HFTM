@@ -1,0 +1,6 @@
+Mitarbeiter(<u>Mitarbeiter_ID</u>, Name NOT-NULL, Vorname NOT-NULL, *Beruf_ID NOT-NULL*)
+Beruf(<u>Beruf_ID</u>, Bezeichnung)
+Arzt(<u>Arzt_ID</u>, *Mitarbeiter_ID NOT-NULL*)
+Patient(<u>Patienten_ID</u>, Name NOT-NULL, Vorname NOT-NULL, Krankenkassennummer NOT-NULL, *Arzt_ID NOT-NULL*)
+Termin(<u>Termin_ID</u>, Datum NOT-NULL, Zeit NOT-NULL, *Arzt_ID NOT-NULL*, *Patienten_ID NOT-NULL*)
+Krankenakte(<u>Krankenkasse_ID</u>, *Patienten_ID NOT-NULL*, Inhalt)
