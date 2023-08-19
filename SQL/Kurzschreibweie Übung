@@ -1,0 +1,11 @@
+Tabelle(PersNr UNIQUE NOT-NULL, Name NOT-NULL, Ausbildung, Gehalt NOT-NULL, ProjektNr, Projektbez, Stunden, AbtNr NOT-NULL, Abteilungsname NOT-NULL)
+
+Person(<PK>PersNr</PK>, Name, Ausbildung, Gehalt, <FK>AbtNr NOT NULL</FK>)
+Projekt(<PK>ProjektNr</PK>, Projektbez)
+Abteilung(<PK>AbtNr</PK>, Abteilungsname)
+Bearbeitung(<PK><FK>PersNr</FK>, <FK>ProjektNr</FK></PK>, Stunden)
+
+
+
+
+Note: Primärschlüssel werden unterstrichen, Fremdschlüssel kursiv geschrieben. Nicht mit Attributen <FK></FK>.

@@ -1,0 +1,1 @@
+Stückliste(Prodnr,Bezeichnung,Prodkomponentnr,Menge)
