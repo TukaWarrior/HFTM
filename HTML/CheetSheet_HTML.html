@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head contains meta data -->
+
+<head>
+    <meta charset='utf-8'> <!--character encoding scheme-->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title> <!--Title text of browser window or tab-->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Ensures proper viewing settings on different devices -->
+    <link href="stylesheet.css" type="text/css" media="screen" rel="stylesheet"> <!-- Embedding of external CSS file -->
+    <script src='main.js'></script> <!-- Load external javascript file -->
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+
+<!-- Body contains page content -->
+
+<body>
+    <h1>This is a HTML Cheat-Sheet</h1>
+    <!-- <html></html> This is a Co0ntainer-Tag, with a separate start- and end-tag. -->
+    <!-- <br/> This is a Simple-Tag, which combines start- and end-tag. -->
+    <h2>This is a secondary title</h2>
+    <p>Paragraph</p>
+    <br /> <!--Line-Break-->
+
+
+    <!-- Attributes -->
+    <img src="guguseli.jpg" /> <!--This is an attribute, it starts with an = symbol-->
+
+
+    <!-- Unordered List. Enumeration with symbols-->
+    <ul>Unordered List
+        <li>Entry 1</li>
+        <li>Entry 2</li>
+        <li>Entry 2</li>
+    </ul>
+
+
+    <!-- Ordered List. Enumeration with numbers -->
+    <ol>Ordered List
+        <li>Entry 1</li>
+        <li>Entry 2</li>
+    </ol>
+
+
+    <!-- Text Formatting -->
+    <p><b>bold</b></p>
+    <p><u>underline</u></p>
+    <p><i>italic</i></p>
+    <p><a href="https://www.google.ch">Hyperlink</a></p>
+    <p>This is the first line.<br>This is the second line.</p>
+    <!-- More formatting using stylesheets-->
+
+
+    <!-- Table -->
+    <table border="1" bordercolor="purple">
+        <tr> <!-- Table Row -->
+            <th>Table Header 1</th>
+            <th>Table Header 2</th>
+        </tr>
+        <tr>
+            <td>Table Data 1</td>
+            <td>Table Data 2</td>
+        </tr>
+        <tr>
+            <td>Table Data 3</td>
+            <td>Table Data 4</td>
+        </tr>
+    </table>
+
+
+    <!-- Embed Images -->
+    <img src="images/image.heif"> <!-- Relative path,starting from the html file -->
+    <img src="/images/image.heif"> <!-- Absolute path, starting from the root directory-->
+    <img src="https://www.google.ch/images/image.heif"> <!-- URL path -->
+
+    <img src="image.jpg" alt="Text if image is not found">
+    <img src="image.jpg" title="Hover over tooltip">
+
+    <img src="image.jpg" width="300"> <!-- Scales proportional to set pixel size -->
+    <img src="image.jpg" width="50%" height="25%"> <!-- Scales booth axis to set size.  -->
+
+
+    <!-- Embed Audio -->
+    <audio controls autoplay=false volume="0.5">
+        <source src="song.flac">
+    </audio>
+
+
+    <!-- Embed Video -->
+    <video controls autoplay=false muted=true width="50%" volume="0.5">
+        <source src="video.av1" type="video/av1">
+        <source src="video.mkv" type="video/mkv"> <!-- Fallback if first source fails-->
+        Your browser does not support the audio element. <!-- Final Fallback -->
+    </video>
+
+
+    <!-- Block Elements -->
+    <div></div>
+    <!-- Creates a division / new area to group elements together. Creates a line break. Used to create larger sections-->
+
+    <span></span>
+    <!-- Same as <div> but doesen't create a line break. Used to create smaller sections-->
+
+    <div class="chapter">
+        Eine <span class="title"> Kapitelüberschrift</span>
+    </div>
+
+
+    <!-- Embed php -->
+    <div>
+        <?php
+        for ($i = 0; $i < 10; $i++) {
+        echo " <li>$i</li>\n";
+        }
+        ?>
+    </div>
+
+    <div>
+        <?php include 'external.php'; ?>
+    </div>
+
+
+    <!-- Miscellaneous -->
+    <!-- &#160; Non breakable space-->
+</body>
+
+</html>

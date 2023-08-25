@@ -1,0 +1,82 @@
+/* This is a comment in CSS */
+
+/* 
+Selector {
+Property:Value
+Property+Value=Declaration
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Define styles for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1,h2,h3 {
+    color:green;
+    width: 80%;
+}
+
+/* Define styles for the main content */
+.main-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Define styles for links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Define a hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Type-Selector */
+h1{ font-family: Arial, Helvetica, sans-serif; } 
+/* Style is applied to all h1 type elements. */
+
+/* Class-Selector */
+.MyClassColorRed { color: red; }
+/* HTML Code: <h1> class="MyClassColorRed">Title</h1> */
+/* Style is applied if elements is assigned to specific class. */
+
+/* ID-Selector */
+#MyIDYellow {background-color: yellow; }
+/* HTML Code: <h1> ID="MyIDYellow">Title</h1> */
+/* Identical as Class-Selector, but can only be used once. */
+
+/* Universal-Selector */
+* { font-size: 14px; color:#ff0000; }
+/* Style is applied to all elements with css styling. */
+
+
+/* Fonts */
+h1 { font-family: Arial, Helvetica, sans-serif; } /* Sans-Serif fonts, better for digital media */
+h1 { font-family:'Times New Roman', Times, serif } /* Serif fonts, better for printed media */
+h1 { font-family:'Courier New', Courier, monospace; } /* Monospace fonts, with uniformal letter spacing */
+
+h1 { font-style:oblique; } /* Styles are normal, italic, oblique, initial, inheret */
+h1 { font-size: 50px;} /* Font-Size in px, pt, cm, %, em. 1em is the current font size.*/
+h1 { font-weight: bold;} /* Thickness of the font.*/
+h1 { font: italic bold 20px arial sans-serif } /* Font groups all attributes in one command */
+
+
+/*Weight of attributes */
+/* StyleSheet Attributes in an html header have the same weight as the ones in an .css file. The order is important. */
+/* ID-Selector > Class-Selector > Type-Selector > HTML style="" attribute */
+/* p{} > .mystyle{} > #mystyle{} > <p style="";> */
