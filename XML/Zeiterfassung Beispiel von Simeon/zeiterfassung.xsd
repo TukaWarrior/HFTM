@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="super-ag.com/rapporte"
+    elementFormDefault="qualified"
+    targetNamespace="super-ag.com/rapporte"
+    xmlns:fin="super-ag.com/finance">
+    <xs:import namespace="super-ag.com/finance" schemaLocation="finance.xsd"/>
+    <xs:element name="rapport">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="arbeitszeiten">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="eintrag" maxOccurs="unbounded"/>
+                        </xs:sequence>      
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="eintrag">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="datum-von" type="xs:dateTime"/>
+                <xs:element name="datum-bis" type="xs:dateTime"/>
+                <xs:element name="taetigkeit" type="xs:string"/>
+                <xs:element name="verrechenbar" type="xs:string"/>
+                <xs:choice>
+                    <xs:element ref="fin:projektnummer"/>
+                    <xs:element ref="fin:kostenstelle"/>
+                </xs:choice>    
+            </xs:sequence>
+            <xs:attribute name="ort">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z][a-z]"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:simpleType name="verrechenbarType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Ja"/>
+            <xs:enumeration value="Nein"/>
+            <xs:enumeration value="Halb"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
