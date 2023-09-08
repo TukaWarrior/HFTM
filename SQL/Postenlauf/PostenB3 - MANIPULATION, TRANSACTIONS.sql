@@ -6,6 +6,8 @@ VALUES ('I047', DATE '2004-04-22');
 INSERT INTO Student (StudentenID, Name, Vorname, Geschlecht, Absenzen, KlassenID)
 VALUES ('XX07', 'Huber', 'Fritz', 'm', 3, 'I047');
 
+COMMIT;
+
 -- Fritz Huber wechselt seine Studienrichtung. 
 -- Ab sofort gehört er zur Elektronikklasse PX05, welche ihr Studium am 28.5.04 startet. 
 
@@ -16,5 +18,13 @@ UPDATE Student
 SET KlassenID = 'PX05'
 WHERE StudentenID = 'XX07';
 
+COMMIT;
+
+-- Die Klasse I047 wird aufgelöst. Löschen Sie die Klasse aus der Datenbank.
+
 DELETE FROM Klasse
 WHERE KlassenID = 'I047';
+
+-- Machen Sie diese letze Änderung rückgängig, indem Sie die Transaktion verwerfen.
+
+ROLLBACK;

@@ -17,3 +17,5 @@ CREATE TABLE Student(
     -- KlassenID CHAR(4) NOT NULL CONSTRAINT FK_Student_Klasse REFERENCES Klasse
     -- PRIMARY KEY (StudentenID)
 );
+
+ALTER TABLE Student ADD CONSTRAINT Chk_Geschlecht CHECK (Geschlecht IN ('m','w'));
