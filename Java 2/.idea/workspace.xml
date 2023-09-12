@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f5cdc45-3be8-4755-801f-cb61412099c6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Java 2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/src/main/java/bankapp/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/src/main/java/bankapp/CreditAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/src/main/java/bankapp/JavaBank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/src/main/java/bankapp/testCreditAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/src/test/java/AccountTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/target/classes/bankapp/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/target/classes/bankapp/CreditAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/target/classes/bankapp/JavaBank$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/target/classes/bankapp/JavaBank$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/target/classes/bankapp/JavaBank$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/target/classes/bankapp/JavaBank$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/target/classes/bankapp/JavaBank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/target/classes/bankapp/testCreditAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S10_BankApp/S10_BankApp/target/test-classes/AccountTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface/.idea/S21_Interface.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface/src/main/java/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface/src/main/java/Blog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface/src/main/java/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface/src/main/java/Searchable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface/src/main/java/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface_Beispielloesung/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface_Beispielloesung/src/main/java/Blog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface_Beispielloesung/src/main/java/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface_Beispielloesung/src/main/java/Programm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface_Beispielloesung/src/main/java/Searchable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface_Beispielloesung/src/main/java/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface_Beispielloesung/target/classes/Blog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface_Beispielloesung/target/classes/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface_Beispielloesung/target/classes/Programm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface_Beispielloesung/target/classes/Searchable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S21_Interface_Beispielloesung/target/classes/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S23_EnumsGenerics/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditorDummyMavenJDK17/dependency-reduced-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditorDummyMavenJDK17/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditorDummyMavenJDK17/src/main/java/ch/hftm/editor/MainApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditorDummyMavenJDK17/src/main/java/ch/hftm/editor/MainAppLauncher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditorDummyMavenJDK17/src/main/java/ch/hftm/editor/service/FileAccess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditorDummyMavenJDK17/src/main/java/ch/hftm/editor/view/EditorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditorDummyMavenJDK17/src/main/resources/fxml/EditorView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditorDummyMavenJDK17/target/classes/ch/hftm/editor/MainApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditorDummyMavenJDK17/target/classes/ch/hftm/editor/MainAppLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditorDummyMavenJDK17/target/classes/ch/hftm/editor/service/FileAccess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditorDummyMavenJDK17/target/classes/ch/hftm/editor/view/EditorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung2-2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung2-2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung2-2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung2-2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung2-2/Uebung2-2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung2-2/src/main/java/garageApp/Auto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung2-2/src/main/java/garageApp/Fahrrad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung2-2/src/main/java/garageApp/Fahrzeug.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung2-2/src/main/java/garageApp/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2VIomeG5HCVZGxqxejm9ukWe4Vs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucab\Repositories\HFTM\Java 2\java2\src\main\java\com\example" />
+      <recent name="C:\Users\lucab\Repositories\HFTM\Java 2\java2\src\main\java" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f5cdc45-3be8-4755-801f-cb61412099c6" name="Changes" comment="" />
+      <created>1694533118968</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694533118968</updated>
+    </task>
+    <servers />
+  </component>
+</project>
