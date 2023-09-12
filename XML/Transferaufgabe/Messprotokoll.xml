@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protokoll 
+    xmlns="super-ag.com/rapporte"
+    xmlns:gugus="https://www.w3.org/2001/XMLSchema-instance" 
+    gugus:schemaLocation="super-ag.com/rapporte zeiterfassung.xsd"
+    xmlns:fin="super-ag.com/finance">
+    <auftraggeber>
+        <auftraggebertyp>
+            <name1></name1>
+            <name2></name2>
+            <adresse></adresse>
+            <plz></plz>
+            <ort></ort>
+        </auftraggebertyp>
+    </auftraggeber>
+    <auftragnehmer>
+        <auftragnehmertyp></auftragnehmertyp>
+        <name1></name1>
+        <name2></name2>
+        <adresse></adresse>
+        <plz></plz>
+        <ort></ort>
+    </auftragnehmer>
+    <ortderinstallation>
+        <adresse></adresse>
+        <plz></plz>
+        <ort></ort>
+        <gebaeudeart></gebaeudeart>
+        <objektnr></objektnr>
+        <instanzeigenr></instanzeigenr>
+    </ortderinstallation>
+    <anlage>
+        <lage></lage>
+        <stromkunde></stromkunde>
+        <zählernummer></zählernummer>
+        <anlagenr></anlagenr>
+    </anlage>
+    <kontrolle>
+        <kontrolltyp></kontrolltyp>
+        <kontrollperiode></kontrollperiode>
+        <installatiuonstyp></installatiuonstyp>
+        <ausgeführteinstallation></ausgeführteinstallation>
+    </kontrolle>
+    <sichtprüfung>
+        <auswahlbetriebsmittel></auswahlbetriebsmittel>
+        <basisschutzt></basisschutzt>
+        <technischeUnterlagen></technischeUnterlagen>
+        <abschaltvorrichtung></abschaltvorrichtung>
+        <sicherheitseinrichtung></sicherheitseinrichtung>
+        <brandabschottung></brandabschottung>
+        <leituzngsverlegung></leituzngsverlegung>
+        <
+    </sichtprüfung>
+</protokoll>
