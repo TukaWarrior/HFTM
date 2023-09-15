@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<protokoll 
+<sina 
     xmlns="super-ag.com/rapporte"
     xmlns:gugus="https://www.w3.org/2001/XMLSchema-instance" 
     gugus:schemaLocation="super-ag.com/rapporte zeiterfassung.xsd"
@@ -49,6 +49,30 @@
         <sicherheitseinrichtung></sicherheitseinrichtung>
         <brandabschottung></brandabschottung>
         <leituzngsverlegung></leituzngsverlegung>
-        <
+        <kennzeichnung></kennzeichnung>
+        <zugaenglichkeit></zugaenglichkeit>
+        <schutzsystem></schutzsystem>
+        <schutzpotentialausgleich>
+            <typ></typ>
+        </schutzpotentialausgleich>
+        <anordnungbussgeraete></anordnungbussgeraete>
+        <bussleitungenspannung></bussleitungenspannung>
+        <einstellungschutzeinrichtungen></einstellungschutzeinrichtungen>
+        <schaltplaene></schaltplaene>
     </sichtprüfung>
-</protokoll>
+    <messung>
+        <stromkreis></stromkreis>
+        <leitung_typ></leitung_typ>
+        <querschnitt></querschnitt>
+        <ueberstromschutz_charakteristik></ueberstromschutz_charakteristik>
+        <i_nenn></i_nenn>
+        <ik_anfang></ik_anfang>
+        <ik_ende></ik_ende>
+        <r_iso></r_iso>
+        <fi_i_nenn></fi_i_nenn>
+        <idn></idn>
+        <delta_t></delta_t>
+    </messung>
+    <asbest></asbest>
+    <
+</sina>

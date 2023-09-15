@@ -1,0 +1,98 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="super-ag.com/rapporte" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="sina">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="auftraggeber">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="auftraggebertyp">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name1"/>
+                    <xs:element type="xs:string" name="name2"/>
+                    <xs:element type="xs:string" name="adresse"/>
+                    <xs:element type="xs:string" name="plz"/>
+                    <xs:element type="xs:string" name="ort"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="auftragnehmer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="auftragnehmertyp"/>
+              <xs:element type="xs:string" name="name1"/>
+              <xs:element type="xs:string" name="name2"/>
+              <xs:element type="xs:string" name="adresse"/>
+              <xs:element type="xs:string" name="plz"/>
+              <xs:element type="xs:string" name="ort"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ortderinstallation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="adresse"/>
+              <xs:element type="xs:string" name="plz"/>
+              <xs:element type="xs:string" name="ort"/>
+              <xs:element type="xs:string" name="gebaeudeart"/>
+              <xs:element type="xs:string" name="objektnr"/>
+              <xs:element type="xs:string" name="instanzeigenr"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="anlage">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="lage"/>
+              <xs:element type="xs:string" name="stromkunde"/>
+              <xs:element type="xs:string" name="zählernummer"/>
+              <xs:element type="xs:string" name="anlagenr"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="kontrolle">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="kontrolltyp"/>
+              <xs:element type="xs:string" name="kontrollperiode"/>
+              <xs:element type="xs:string" name="installatiuonstyp"/>
+              <xs:element type="xs:string" name="ausgeführteinstallation"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sichtprüfung">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="auswahlbetriebsmittel"/>
+              <xs:element type="xs:string" name="basisschutzt"/>
+              <xs:element type="xs:string" name="technischeUnterlagen"/>
+              <xs:element type="xs:string" name="abschaltvorrichtung"/>
+              <xs:element type="xs:string" name="sicherheitseinrichtung"/>
+              <xs:element type="xs:string" name="brandabschottung"/>
+              <xs:element type="xs:string" name="leituzngsverlegung"/>
+              <xs:element type="xs:string" name="kennzeichnung"/>
+              <xs:element type="xs:string" name="zugaenglichkeit"/>
+              <xs:element type="xs:string" name="schutzsystem"/>
+              <xs:element name="schutzpotentialausgleich">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="typ"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="anordnungbussgeraete"/>
+              <xs:element type="xs:string" name="bussleitungenspannung"/>
+              <xs:element type="xs:string" name="einstellungschutzeinrichtungen"/>
+              <xs:element type="xs:string" name="schaltplaene"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="messung"/>
+      </xs:sequence>
+      <xs1:attribute ref="xs:schemaLocation" xmlns:xs="https://www.w3.org/2001/XMLSchema-instance" xmlns:xs1="http://www.w3.org/2001/XMLSchema"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

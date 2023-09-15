@@ -6,6 +6,7 @@
     targetNamespace="super-ag.com/rapporte"
     xmlns:fin="super-ag.com/finance">
     <xs:import namespace="super-ag.com/finance" schemaLocation="finance.xsd"/>
+    
     <xs:element name="rapport">
         <xs:complexType>
             <xs:all>

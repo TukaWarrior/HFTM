@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sina 
+    xmlns="super-ag.com/rapporte"
+    xmlns:gugus="https://www.w3.org/2001/XMLSchema-instance" 
+    gugus:schemaLocation="super-ag.com/rapporte zeiterfassung.xsd"
+    xmlns:fin="super-ag.com/finance">
+<!-- Who owns the building -->
+    <client>
+        <client_type type=""/>
+        <adress>
+            <name_1></name_1>
+            <name_2></name_2>
+            <street></street>
+            <zip></zip>
+            <city></city>
+            <phone></phone>
+        </adress>
+    </client>
+<!-- Who got the contract -->
+    <contractor>
+        <contractor_type type=""/>
+        <adress>
+            <name_1></name_1>
+            <name_2></name_2>
+            <street></street>
+            <zip></zip>
+            <city></city>
+            <phone></phone>
+        </adress>
+    </contractor>
+<!-- What was inspected -->
+    <installation_location>
+        <building_type type=""/>
+        <adress>
+            <street></street>
+            <zip></zip>
+            <city></city>
+            <!-- Split up name and adress so booth are independantly reusable -->
+        </adress>
+        <object_number></object_number>
+        <installation_report></installation_report>
+    </installation_location>
+
+    <anlage>
+        <lage></lage>
+        <stromkunde></stromkunde>
+        <zählernummer></zählernummer>
+        <anlagenr></anlagenr>
+    </anlage>
+    <kontrolle>
+        <kontrolltyp></kontrolltyp>
+        <kontrollperiode></kontrollperiode>
+        <installatiuonstyp></installatiuonstyp>
+        <ausgeführteinstallation></ausgeführteinstallation>
+    </kontrolle>
+    <sichtprüfung>
+        <auswahlbetriebsmittel></auswahlbetriebsmittel>
+        <basisschutzt></basisschutzt>
+        <technischeUnterlagen></technischeUnterlagen>
+        <abschaltvorrichtung></abschaltvorrichtung>
+        <sicherheitseinrichtung></sicherheitseinrichtung>
+        <brandabschottung></brandabschottung>
+        <leituzngsverlegung></leituzngsverlegung>
+        <kennzeichnung></kennzeichnung>
+        <zugaenglichkeit></zugaenglichkeit>
+        <schutzsystem></schutzsystem>
+        <schutzpotentialausgleich>
+            <typ></typ>
+        </schutzpotentialausgleich>
+        <anordnungbussgeraete></anordnungbussgeraete>
+        <bussleitungenspannung></bussleitungenspannung>
+        <einstellungschutzeinrichtungen></einstellungschutzeinrichtungen>
+        <schaltplaene></schaltplaene>
+    </sichtprüfung>
+    <messung>
+        <stromkreis></stromkreis>
+        <leitung_typ></leitung_typ>
+        <querschnitt></querschnitt>
+        <ueberstromschutz_charakteristik></ueberstromschutz_charakteristik>
+        <i_nenn></i_nenn>
+        <ik_anfang></ik_anfang>
+        <ik_ende></ik_ende>
+        <r_iso></r_iso>
+        <fi_i_nenn></fi_i_nenn>
+        <idn></idn>
+        <delta_t></delta_t>
+    </messung>
+    <asbest></asbest>
+</sina>

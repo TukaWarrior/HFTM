@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="esti/adress">
+<xs:element name="projektnummer" type="xs:string"/>
+<xs:element name="kostenstelle" type="xs:int"/>
+</xs:schema>

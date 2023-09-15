@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Define the complex type for an address -->
+    <xs:complexType name="AddressType">
+        <xs:sequence>
+            <xs:element name="name_1" type="xs:string"/>
+            <xs:element name="name_2" type="xs:string" minOccurs="0"/>
+            <xs:element name="street" type="xs:string"/>
+            <xs:element name="zip">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:pattern value="[0-9]{4}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="phone" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Define the client type -->
+    <xs:element name="client">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Add the client_type element with a type attribute -->
+                <xs:element name="client_type">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="owner"/>
+                            <xs:enumeration value="administration"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <!-- Include the AddressType complex type for address information -->
+                <xs:element name="adress" type="AddressType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Define the contractor type -->
+    <xs:element name="contractor">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Add the contractor_type element with a type attribute -->
+                <xs:element name="contractor_type">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="electrician"/>
+                            <xs:enumeration value="inspector"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <!-- Include the AddressType complex type for address information -->
+                <xs:element name="adress" type="AddressType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+
+<!-- 
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Define an enumeration for inspection types -->
+    <xs:simpleType name="InspectionType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="final inspection"/>
+            <xs:enumeration value="first inspection"/>
+            <xs:enumeration value="periodic inspection"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Define the inspection element -->
+    <xs:element name="inspection">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Inspection type element with the enumeration -->
+                <xs:element name="inspection_type" type="InspectionType"/>
+                <!-- Conditional periodic interval element -->
+                <xs:element name="periodic_interval" minOccurs="0">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1 year"/>
+                            <xs:enumeration value="5 years"/>
+                            <xs:enumeration value="10 years"/>
+                            <xs:enumeration value="20 years"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema> -->
