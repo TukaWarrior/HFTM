@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sina 
+<xs:schema
     xmlns="super-ag.com/rapporte"
     xmlns:gugus="https://www.w3.org/2001/XMLSchema-instance" 
     gugus:schemaLocation="super-ag.com/rapporte zeiterfassung.xsd"
     xmlns:fin="super-ag.com/finance">
+    
+
 <!-- Who owns the building -->
-    <client>
-        <client_type type=""/>
+    <client client_type="">
         <adress>
-            <name_1></name_1>
-            <name_2></name_2>
+            <name></name>
+            <name></name>
             <street></street>
             <zip></zip>
             <city></city>
             <phone></phone>
         </adress>
     </client>
+
 <!-- Who got the contract -->
-    <contractor>
-        <contractor_type type=""/>
+    <contractor contractor_type="">
         <adress>
             <name_1></name_1>
             <name_2></name_2>
@@ -28,6 +29,7 @@
             <phone></phone>
         </adress>
     </contractor>
+
 <!-- What was inspected -->
     <installation_location>
         <building_type type=""/>
@@ -86,4 +88,4 @@
         <delta_t></delta_t>
     </messung>
     <asbest></asbest>
-</sina>
+</xs:schema>
