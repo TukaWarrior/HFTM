@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sina
+    xmlns="http://www.eit.swiss/sina"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.eit.swiss/sina 01_SiNa.xsd"
+    xmlns:contact="http://www.eit.swiss/contact">
+
+    <contact:name>Hilda</contact:name>
+</sina>

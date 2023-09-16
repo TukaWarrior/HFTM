@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rapport 
     xmlns="super-ag.com/rapporte"
-    xmlns:gugus="https://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:gugus="https:/ /www.w3.org/2001/XMLSchema-instance" 
     gugus:schemaLocation="super-ag.com/rapporte zeiterfassung.xsd"
     xmlns:fin="super-ag.com/finance">
     <arbeitszeiten>

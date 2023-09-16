@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema 
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="super-ag.com/rapporte"
+    xmlns="super-ag.com/rapporte" 
     elementFormDefault="qualified"
     targetNamespace="super-ag.com/rapporte"
     xmlns:fin="super-ag.com/finance">

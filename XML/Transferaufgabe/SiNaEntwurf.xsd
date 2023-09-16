@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="super-ag.com/rapporte"
+    elementFormDefault="qualified"
+    targetNamespace="super-ag.com/rapporte">
+
+<!-- Definition of Elements -->
+
+<!-- Name of Adress Block -->
+    <xs:element name="name">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Max occurs 2 because possibly multiple names in an adress. Or name + company -->
+                <xs:element name="name" minOccurs="1" maxOccurs="2">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string"/>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+<!-- Adress of Adress Block -->
+    <xs:element name="adress">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="street">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string"/>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="zip">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:pattern value="[1-9][0-9]{3}"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="city">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string"/>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Contact of Adress Block -->
+    <xs:element name="contact">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="phone" minOccurs="1" maxOccurs="unbounded">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <!-- Country Code (+1 - +999) and phone number-->
+                            <xs:pattern value="\+\d{1,3} \d"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="email" minOccurs="0">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string"/>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="DIAZED">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="overcurrent_breaker_characteristic">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="DI"/>
+                            <xs:enumeration value="DII"/>
+                            <xs:enumeration value="DIII"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="LS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="overcurrent_breaker_characteristic">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="B"/>
+                            <xs:enumeration value="C"/>
+                            <xs:enumeration value="CS"/>
+                            <xs:enumeration value="D"/>
+                            <xs:enumeration value="E"/>
+                            <xs:enumeration value="K"/>
+                            <xs:enumeration value="Z"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="NH">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="overcurrent_breaker_characteristic">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="000"/>
+                            <xs:enumeration value="00"/>
+                            <xs:enumeration value="0"/>
+                            <xs:enumeration value="1"/>
+                            <xs:enumeration value="2"/>
+                            <xs:enumeration value="3"/>
+                            <xs:enumeration value="4"/>
+                            <xs:enumeration value="4a"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <!-- Sheet containing meassured data -->
+    <xs:element name="sheet">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="row" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="description">
+                            </xs:element>
+                            <xs:element name="cable_type">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="cable_gauge">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string"/>
+                                </xs:simpleType>
+                            </xs:element>
+
+
+                            
+                            
+
+                            <xs:element name="overcurrent_breaker_type">
+                                <xs:complexType>
+                                    <xs:choice>
+                                        <xs:element ref="DIAZED"/>
+                                        <xs:element ref="LS"/>
+                                        <xs:element ref="NH"/>
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+
+
+
+
+                            <xs:element name="overcurrent_protection_IN">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="meassurement_IKBeginning">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="meassurement_IKEnd">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer"/>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="meassurement_RIso">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:double">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxInclusive value="1000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="meassurement_PEConductivity" type="xs:boolean"/>
+                            <xs:element name="meassurement_RDC_IN">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:pattern value=""></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="meassurement_RCD_IDelta"></xs:element>
+                            <xs:element name="meassurement_TrippingTime"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+
+
+    <!-- Structure of File -->
+    <xs:element name="sina">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="client">
+                    <xs:complexType>
+                        <xs:attribute name="client_type">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="owner"/>
+                                    <xs:enumeration value="administration"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:sequence>
+                            <xs:element ref="name"/>
+                            <xs:element ref="adress"/>
+                            <xs:element ref="contact"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="contractor">
+                    <xs:complexType>
+                        <xs:attribute name="contractor_type">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="electrician"/>
+                                    <xs:enumeration value="inspector"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:sequence>
+                            <xs:element ref="name"/>
+                            <xs:element ref="adress"/>
+                            <xs:element ref="contact"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="location">
+                    <xs:complexType>
+                        <xs:attribute name="building_typ">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Single Residental"/>
+                                    <xs:enumeration value="Apartment Building"/>
+                                    <xs:enumeration value="Commercial"/>
+                                    <xs:enumeration value="Industrial"/>
+                                    <xs:enumeration value="Agriculture"/>
+                                    <xs:enumeration value="Public"/>
+                                    <xs:enumeration value="Medical"/>
+                                    <xs:enumeration value="Shelter"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:sequence>
+                            <xs:element ref="xs:adress"/>
+                            <xs:element>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string"/>
+                                </xs:simpleType>
+                            </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element ref="sheet"/>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.eit.swiss/contact"
+    xmlns:contact="http://www.eit.swiss/contact">
+
+    <!-- Declaration of Elements -->
+    <xs:element name="name" type="xs:string" />
+
+    <xs:element name="company" type="xs:string"/>
+
+    <xs:element name="street" type="xs:string" />
+
+    <xs:element name="zip">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:pattern value="[1-9][0-9]{3}" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="city" type="xs:string" />
+
+    <xs:element name="phone">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- Country code +999 phone number-->
+                <xs:pattern value="\+\d{1,3} \d+" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="email" type="xs:string"/>
+
+
+    <!-- Groupings of Elements to access in blocks-->
+    <xs:element name="adress">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="contact:name"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
