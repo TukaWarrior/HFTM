@@ -38,6 +38,9 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element ref="contact:name"/>
+                <xs:element ref="contact:street"/>
+                <xs:element ref="contact:zip"/>
+                <xs:element ref="contact:city"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
