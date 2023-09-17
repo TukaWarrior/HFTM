@@ -133,8 +133,8 @@
                 <xs:element name="row" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="description">
-                            </xs:element>
+                            <xs:element name="description" type="xs:string"/>
+                            
                             <xs:element name="cable_type">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string"/>
@@ -148,8 +148,7 @@
 
 
                             
-                            
-
+        
                             <xs:element name="overcurrent_breaker_type">
                                 <xs:complexType>
                                     <xs:choice>
@@ -207,75 +206,3 @@
 
 
     <!-- Structure of File -->
-    <xs:element name="sina">
-        <xs:complexType>
-            <xs:sequence>
-
-                <xs:element name="client">
-                    <xs:complexType>
-                        <xs:attribute name="client_type">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:string">
-                                    <xs:enumeration value="owner"/>
-                                    <xs:enumeration value="administration"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:attribute>
-                        <xs:sequence>
-                            <xs:element ref="name"/>
-                            <xs:element ref="adress"/>
-                            <xs:element ref="contact"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-
-                <xs:element name="contractor">
-                    <xs:complexType>
-                        <xs:attribute name="contractor_type">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:string">
-                                    <xs:enumeration value="electrician"/>
-                                    <xs:enumeration value="inspector"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:attribute>
-                        <xs:sequence>
-                            <xs:element ref="name"/>
-                            <xs:element ref="adress"/>
-                            <xs:element ref="contact"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-
-                <xs:element name="location">
-                    <xs:complexType>
-                        <xs:attribute name="building_typ">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:string">
-                                    <xs:enumeration value="Single Residental"/>
-                                    <xs:enumeration value="Apartment Building"/>
-                                    <xs:enumeration value="Commercial"/>
-                                    <xs:enumeration value="Industrial"/>
-                                    <xs:enumeration value="Agriculture"/>
-                                    <xs:enumeration value="Public"/>
-                                    <xs:enumeration value="Medical"/>
-                                    <xs:enumeration value="Shelter"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:attribute>
-                        <xs:sequence>
-                            <xs:element ref="xs:adress"/>
-                            <xs:element>
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string"/>
-                                </xs:simpleType>
-                            </xs:element>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-
-            <xs:element ref="sheet"/>
-
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>

@@ -8,4 +8,228 @@
     <xs:import namespace="http://www.eit.swiss/contact" schemaLocation="01_Contact.xsd" />
 
 
+    <!-- Elements -->
+    <!-- Element: Client -->
+    <xs:element name="client">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="contact:adress_block" />
+                <xs:element ref="contact:contact_block" />
+            </xs:sequence>
+            <xs:attribute name="client_type">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="owner" />
+                        <xs:enumeration value="administration" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Element: Contractor -->
+    <xs:element name="contractor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="contact:adress_block" />
+                <xs:element ref="contact:contact_block" />
+            </xs:sequence>
+            <xs:attribute name="contractor_type">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="electrician" />
+                        <xs:enumeration value="inspector" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Element: Location -->
+    <xs:element name="location">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="contact:adress_block" />
+            </xs:sequence>
+            <xs:attribute name="building_typ">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Residental" />
+                        <xs:enumeration value="Commercial" />
+                        <xs:enumeration value="Industrial" />
+                        <xs:enumeration value="Agriculture" />
+                        <xs:enumeration value="Public" />
+                        <xs:enumeration value="School" />
+                        <xs:enumeration value="Medical" />
+                        <xs:enumeration value="Shelter" />
+                        <xs:enumeration value="Military" />
+                        <xs:enumeration value="Ship" />
+                        <xs:enumeration value="Explosive" />
+                        <xs:enumeration value="ComInfrastructure" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Element: Inspection -->
+    <xs:element name="inspection">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="inspection_type">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Final Inspection SK" />
+                            <xs:enumeration value="Intermediate Inspection AK" />
+                            <xs:enumeration value="Periodic Inspection PK" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="inspection_period">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="1 year" />
+                            <xs:enumeration value="3 year" />
+                            <xs:enumeration value="5 year" />
+                            <xs:enumeration value="10 year" />
+                            <xs:enumeration value="20 year" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="inspection_date" type="xs:date" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Element: Installation -->
+    <xs:element name="installation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="installation_type">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="New" />
+                            <xs:enumeration value="Extension" />
+                            <xs:enumeration value="Modification" />
+                            <xs:enumeration value="Temporary" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="installation_description" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Element: Technical Data -->
+    <xs:element name="tecnical_data">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="earthing_system">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="TN-S" />
+                            <xs:enumeration value="TN-C" />
+                            <xs:enumeration value="TN-C-S" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="asbestos" type="xs:boolean" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Element: Meassurement_Overcurrent_Protection -->
+    <xs:element name="overcurrent_breaker_type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="DIAZED DI"/>
+                <xs:enumeration value="DIAZED DII"/>
+                <xs:enumeration value="DIAZED DIII"/>
+                <xs:enumeration value="LS B"/>
+                <xs:enumeration value="LS C"/>
+                <xs:enumeration value="LS CS"/>
+                <xs:enumeration value="LS D"/>
+                <xs:enumeration value="LS E"/>
+                <xs:enumeration value="LS K"/>
+                <xs:enumeration value="LS Z"/>
+                <xs:enumeration value="NH 000"/>
+                <xs:enumeration value="NH 00"/>
+                <xs:enumeration value="NH 0"/>
+                <xs:enumeration value="NH 1"/>
+                <xs:enumeration value="NH 2"/>
+                <xs:enumeration value="NH 3"/>
+                <xs:enumeration value="NH 4"/>
+                <xs:enumeration value="NH 4a"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <!-- Element: Meassurement_Sheet -->
+    <xs:element name="meassurement_sheet">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="row" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="description" type="xs:string"/>
+                            <xs:element name="cable_type" type="xs:string"/>
+                            <xs:element name="cable_gauge" type="xs:string"/>
+                            <xs:element ref="overcurrent_breaker_type"/>
+                            <xs:element name="overcurrent_in">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="shortcircuit_ik_start">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:double">
+                                        <xs:pattern value="\d+(\.\d{1,2})?"/>
+                                        <xs:minInclusive value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="shortcircuit_ik_end">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:double">
+                                        <xs:pattern value="\d+(\.\d{1,2})?"/>
+                                        <xs:minInclusive value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="insulation_resistance_riso">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:double">
+                                        <xs:pattern value="\d+(\.\d{1,2})?"/>
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxInclusive value="1000"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="pe_conductivity" type="xs:boolean"/>
+                            <xs:element name="rcd_in" type="xs:integer"/>
+                            <xs:element name="rcd_idn" type="xs:int"/>
+                            <xs:element name="rcd_trippingtime" type="xs:double"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Structure of File -->
+    <xs:element name="sina">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="client"/>
+                <xs:element ref="contractor"/>
+                <xs:element ref="location"/>
+                <xs:element ref="inspection"/>
+                <xs:element ref="installation"/>
+                <xs:element ref="tecnical_data"/>
+                <xs:element ref="meassurement_sheet"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>

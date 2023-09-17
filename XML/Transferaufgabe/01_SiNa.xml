@@ -5,5 +5,82 @@
     xsi:schemaLocation="http://www.eit.swiss/sina 01_SiNa.xsd"
     xmlns:contact="http://www.eit.swiss/contact">
 
-    <contact:name>Hilda</contact:name>
+    <client client_type="owner">
+        <name_block>
+            <name>Luca Bützberger</name>
+        </name_block>
+        <adress_block>
+            <street>Weinstegen 184</street>
+            <zip>4936</zip>
+            <city>Kleindietwil</city>
+        </adress_block>
+        <contact_block>
+            <phone>0774500111</phone>
+            <email>luca.buetzberger@hftm.ch</email>
+        </contact_block>
+    </client>
+    <contractor type="inspector">
+        <name_block>
+            <company>Elektrokontroll AG</company>
+        </name_block>
+        <adress_block>
+            <street>Hauptstrasse 1</street>
+            <zip>4934</zip>
+            <city>Madiswil</city>
+        </adress_block>
+        <contact_block>
+            <phone>0629650001</phone>
+            <email>kontakt@elektrokontrollag.ch</email>
+        </contact_block>
+    </contractor>
+    <location building_type="Residental">
+        <adress_block>
+            <street>Weinstegen 184</street>
+            <zip>4936</zip>
+            <city>Kleindietwil</city>
+        </adress_block>
+    </location>
+    <inspection>
+        <inspection_type>Final Inspection SK</inspection_type>
+        <inspection_period>20 year</inspection_period>
+        <inspection_date>2023-09-17</inspection_date>
+    </inspection>
+    <installation>
+        <installation_type>Extension</installation_type>
+        <installation_description>Neue Steckdose in Zimmer EG, Neuer Backofen</installation_description>
+    </installation>
+    <tecnical_data>
+        <earthing_system>TN-S</earthing_system>
+        <asbestos>false</asbestos>
+    </tecnical_data>
+    <meassurement_sheet>
+        <row>
+            <description>10Q2 Steckdose Zimmer EG</description>
+            <cable_type>TT</cable_type>
+            <cable_gauge>3x1.5</cable_gauge>
+            <overcurrent_breaker_type>LS C</overcurrent_breaker_type>
+            <overcurrent_in>13</overcurrent_in>
+            <shortcircuit_ik_start>986</shortcircuit_ik_start>
+            <shortcircuit_ik_end>354</shortcircuit_ik_end>
+            <insulation_resistance_riso>500</insulation_resistance_riso>
+            <pe_conductivity>true</pe_conductivity>
+            <rcd_in>13</rcd_in>
+            <rcd_idn>30</rcd_idn>
+            <rcd_trippingtime>28.4</rcd_trippingtime>
+        </row>
+        <row>
+            <description>4Q4 Backofen</description>
+            <cable_type>TT flex</cable_type>
+            <cable_gauge>5x2.5</cable_gauge>
+            <overcurrent_breaker_type>LS C</overcurrent_breaker_type>
+            <overcurrent_in>16</overcurrent_in>
+            <shortcircuit_ik_start>986</shortcircuit_ik_start>
+            <shortcircuit_ik_end>583</shortcircuit_ik_end>
+            <insulation_resistance_riso>500</insulation_resistance_riso>
+            <pe_conductivity>true</pe_conductivity>
+            <rcd_in>16</rcd_in>
+            <rcd_idn>30</rcd_idn>
+            <rcd_trippingtime>34.7</rcd_trippingtime>
+        </row>
+    </meassurement_sheet>
 </sina>
