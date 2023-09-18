@@ -1,3 +1,4 @@
+package S21_Interface_Loesung;
 public class Comment implements Searchable {
     private String content;
     private String author;

@@ -1,3 +1,4 @@
+package S21_Interface_Loesung;
 public class Blog implements Searchable {
 
     private String title;

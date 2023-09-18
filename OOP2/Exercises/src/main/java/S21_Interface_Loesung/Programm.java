@@ -1,3 +1,4 @@
+package S21_Interface_Loesung;
 import java.util.ArrayList;
 
 public class Programm {

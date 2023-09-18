@@ -1,3 +1,4 @@
+package S21_Interface_Loesung;
 public final class User implements Searchable {
     private final String name;
 

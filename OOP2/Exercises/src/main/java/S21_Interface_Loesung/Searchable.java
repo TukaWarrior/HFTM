@@ -1,3 +1,4 @@
+package S21_Interface_Loesung;
 public interface Searchable {
     public final String SEPERATOR = "-";
 
