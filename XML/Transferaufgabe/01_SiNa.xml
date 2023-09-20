@@ -3,42 +3,43 @@
     xmlns="http://www.eit.swiss/sina"
     xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.eit.swiss/sina 01_SiNa.xsd"
-    xmlns:contact="http://www.eit.swiss/contact">
+    xmlns:contact="http://www.eit.swiss/contact"
+    xmlns:signature="http://www.eit.swiss/signature">
 
     <client client_type="owner">
-        <name_block>
+        <contact:name_block>
             <name>Luca Bützberger</name>
-        </name_block>
-        <adress_block>
+        </contact:name_block>
+        <contact:adress_block>
             <street>Weinstegen 184</street>
             <zip>4936</zip>
             <city>Kleindietwil</city>
-        </adress_block>
-        <contact_block>
+        </contact:adress_block>
+        <contact:contact_block>
             <phone>0774500111</phone>
             <email>luca.buetzberger@hftm.ch</email>
-        </contact_block>
+        </contact:contact_block>
     </client>
     <contractor type="inspector">
-        <name_block>
+        <contact:name_block>
             <company>Elektrokontroll AG</company>
-        </name_block>
-        <adress_block>
+        </contact:name_block>
+        <contact:adress_block>
             <street>Hauptstrasse 1</street>
             <zip>4934</zip>
             <city>Madiswil</city>
-        </adress_block>
-        <contact_block>
+        </contact:adress_block>
+        <contact:contact_block>
             <phone>0629650001</phone>
             <email>kontakt@elektrokontrollag.ch</email>
-        </contact_block>
+        </contact:contact_block>
     </contractor>
     <location building_type="Residental">
-        <adress_block>
+        <contact:adress_block>
             <street>Weinstegen 184</street>
             <zip>4936</zip>
             <city>Kleindietwil</city>
-        </adress_block>
+        </contact:adress_block>
     </location>
     <inspection>
         <inspection_type>Final Inspection SK</inspection_type>
@@ -83,4 +84,20 @@
             <rcd_trippingtime>34.7</rcd_trippingtime>
         </row>
     </meassurement_sheet>
+    <signatures>
+        <contractor_signature>
+            <signature:signature_block>
+                <location>Madiswil</location>
+                <date>2023-09-17</date>
+                <signature>U0dzc3g2SGhJU2dycXkzNUJhaU1sRAAW</signature>
+            </signature:signature_block>
+        </contractor_signature>
+        <customer_signature>
+            <signature:signature_block>
+                <location>Madiswil</location>
+                <date>2023-09-17</date>
+                <signature>VGhpcyBpcyBhIGJhc2U2NCBCYXNlNjQu</signature>
+            </signature:signature_block>
+        </customer_signature>
+    </signatures>
 </sina>

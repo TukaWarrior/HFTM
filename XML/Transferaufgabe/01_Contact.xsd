@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified"
     targetNamespace="http://www.eit.swiss/contact"
     xmlns="http://www.eit.swiss/contact">
 
-    <!-- Elements -->
-    <xs:element name="name" type="xs:string"/>
+    <!-- Simple Elements -->
+    <xs:element name="name" type="xs:string" />
 
-    <xs:element name="company" type="xs:string"/>
+    <xs:element name="company" type="xs:string" />
 
-    <xs:element name="street" type="xs:string"/>
+    <xs:element name="street" type="xs:string" />
 
     <xs:element name="zip">
         <xs:simpleType>
             <xs:restriction base="xs:integer">
-                <xs:pattern value="[1-9][0-9]{3}"/>
+                <xs:pattern value="[1-9][0-9]{3}" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
@@ -25,21 +26,20 @@
         <xs:simpleType>
             <xs:restriction base="xs:string">
                 <!-- Country code +999 phone number-->
-                <xs:pattern value="\+\d{1,3} \d+"/>
+                <xs:pattern value="\+\d{1,3} \d+" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
 
-    <xs:element name="email" type="xs:string"/>
+    <xs:element name="email" type="xs:string" />
 
     <!-- Blocks for easy access-->
-
     <xs:element name="name_block">
         <xs:complexType>
             <xs:sequence>
                 <xs:choice minOccurs="1">
-                    <xs:element ref="name"/>
-                    <xs:element ref="company"/>
+                    <xs:element ref="name" />
+                    <xs:element ref="company" />
                 </xs:choice>
             </xs:sequence>
         </xs:complexType>
@@ -48,9 +48,9 @@
     <xs:element name="adress_block">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="street"/>
-                <xs:element ref="zip"/>
-                <xs:element ref="city"/>
+                <xs:element ref="street" />
+                <xs:element ref="zip" />
+                <xs:element ref="city" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -58,8 +58,8 @@
     <xs:element name="contact_block">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="phone"/>
-                <xs:element ref="email"/>
+                <xs:element ref="phone" />
+                <xs:element ref="email" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>

@@ -4,8 +4,10 @@
     xmlns="http://www.eit.swiss/sina"
     targetNamespace="http://www.eit.swiss/sina"
     elementFormDefault="qualified"
-    xmlns:contact="http://www.eit.swiss/contact">
+    xmlns:contact="http://www.eit.swiss/contact"
+    xmlns:signature="http://www.eit.swiss/signature">
     <xs:import namespace="http://www.eit.swiss/contact" schemaLocation="01_Contact.xsd" />
+    <xs:import namespace="http://www.eit.swiss/signature" schemaLocation="01_Signature.xsd" />
 
 
     <!-- Elements -->
@@ -16,7 +18,7 @@
                 <xs:element ref="contact:adress_block" />
                 <xs:element ref="contact:contact_block" />
             </xs:sequence>
-            <xs:attribute name="client_type">
+            <xs:attribute name="client_type" use="required">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
                         <xs:enumeration value="owner" />
@@ -34,7 +36,7 @@
                 <xs:element ref="contact:adress_block" />
                 <xs:element ref="contact:contact_block" />
             </xs:sequence>
-            <xs:attribute name="contractor_type">
+            <xs:attribute name="contractor_type" use="required">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
                         <xs:enumeration value="electrician" />
@@ -51,7 +53,7 @@
             <xs:sequence>
                 <xs:element ref="contact:adress_block" />
             </xs:sequence>
-            <xs:attribute name="building_typ">
+            <xs:attribute name="building_typ" use="required"> 
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
                         <xs:enumeration value="Residental" />
@@ -138,55 +140,55 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Element: Meassurement_Overcurrent_Protection -->
+    <!-- Element: Meassurement Overcurrent Protection -->
     <xs:element name="overcurrent_breaker_type">
         <xs:simpleType>
             <xs:restriction base="xs:string">
-                <xs:enumeration value="DIAZED DI"/>
-                <xs:enumeration value="DIAZED DII"/>
-                <xs:enumeration value="DIAZED DIII"/>
-                <xs:enumeration value="LS B"/>
-                <xs:enumeration value="LS C"/>
-                <xs:enumeration value="LS CS"/>
-                <xs:enumeration value="LS D"/>
-                <xs:enumeration value="LS E"/>
-                <xs:enumeration value="LS K"/>
-                <xs:enumeration value="LS Z"/>
-                <xs:enumeration value="NH 000"/>
-                <xs:enumeration value="NH 00"/>
-                <xs:enumeration value="NH 0"/>
-                <xs:enumeration value="NH 1"/>
-                <xs:enumeration value="NH 2"/>
-                <xs:enumeration value="NH 3"/>
-                <xs:enumeration value="NH 4"/>
-                <xs:enumeration value="NH 4a"/>
+                <xs:enumeration value="DIAZED DI" />
+                <xs:enumeration value="DIAZED DII" />
+                <xs:enumeration value="DIAZED DIII" />
+                <xs:enumeration value="LS B" />
+                <xs:enumeration value="LS C" />
+                <xs:enumeration value="LS CS" />
+                <xs:enumeration value="LS D" />
+                <xs:enumeration value="LS E" />
+                <xs:enumeration value="LS K" />
+                <xs:enumeration value="LS Z" />
+                <xs:enumeration value="NH 000" />
+                <xs:enumeration value="NH 00" />
+                <xs:enumeration value="NH 0" />
+                <xs:enumeration value="NH 1" />
+                <xs:enumeration value="NH 2" />
+                <xs:enumeration value="NH 3" />
+                <xs:enumeration value="NH 4" />
+                <xs:enumeration value="NH 4a" />
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
 
-    <!-- Element: Meassurement_Sheet -->
+    <!-- Element: Meassurement Sheet -->
     <xs:element name="meassurement_sheet">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="row" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="description" type="xs:string"/>
-                            <xs:element name="cable_type" type="xs:string"/>
-                            <xs:element name="cable_gauge" type="xs:string"/>
-                            <xs:element ref="overcurrent_breaker_type"/>
+                            <xs:element name="description" type="xs:string" />
+                            <xs:element name="cable_type" type="xs:string" />
+                            <xs:element name="cable_gauge" type="xs:string" />
+                            <xs:element ref="overcurrent_breaker_type" />
                             <xs:element name="overcurrent_in">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:integer">
-                                        <xs:minInclusive value="0"/>
+                                        <xs:minInclusive value="0" />
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
                             <xs:element name="shortcircuit_ik_start">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:double">
-                                        <xs:pattern value="\d+(\.\d{1,2})?"/>
-                                        <xs:minInclusive value="0"/>
+                                        <xs:pattern value="\d+(\.\d{1,2})?" />
+                                        <xs:minInclusive value="0" />
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
@@ -194,23 +196,23 @@
                                 <xs:simpleType>
                                     <xs:restriction base="xs:double">
                                         <xs:pattern value="\d+(\.\d{1,2})?"/>
-                                        <xs:minInclusive value="0"/>
+                                        <xs:minInclusive value="0" />
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
                             <xs:element name="insulation_resistance_riso">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:double">
-                                        <xs:pattern value="\d+(\.\d{1,2})?"/>
-                                        <xs:minInclusive value="0"/>
-                                        <xs:maxInclusive value="1000"/>
+                                        <xs:pattern value="\d+(\.\d{1,2})?" />
+                                        <xs:minInclusive value="0" />
+                                        <xs:maxInclusive value="1000" />
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="pe_conductivity" type="xs:boolean"/>
-                            <xs:element name="rcd_in" type="xs:integer"/>
-                            <xs:element name="rcd_idn" type="xs:int"/>
-                            <xs:element name="rcd_trippingtime" type="xs:double"/>
+                            <xs:element name="pe_conductivity" type="xs:boolean" />
+                            <xs:element name="rcd_in" type="xs:integer" />
+                            <xs:element name="rcd_idn" type="xs:int" />
+                            <xs:element name="rcd_trippingtime" type="xs:double" />
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -218,18 +220,42 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Structure of File -->
-    <xs:element name="sina">
+<!-- Element: Signatures -->
+    <xs:element name="signatures">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="client"/>
-                <xs:element ref="contractor"/>
-                <xs:element ref="location"/>
-                <xs:element ref="inspection"/>
-                <xs:element ref="installation"/>
-                <xs:element ref="tecnical_data"/>
-                <xs:element ref="meassurement_sheet"/>
+                <xs:element name="contractor_signature">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="signature:signature_block" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="customer_signature">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="signature:signature_block" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <!-- File Structure -->
+    <xs:element name="sina">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="client" />
+                <xs:element ref="contractor" />
+                <xs:element ref="location" />
+                <xs:element ref="inspection" />
+                <xs:element ref="installation" />
+                <xs:element ref="tecnical_data" />
+                <xs:element ref="meassurement_sheet" />
+                <xs:element ref="signatures" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
 </xs:schema>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://www.eit.swiss/sina"
+    targetNamespace="http://www.eit.swiss/sina"
+    elementFormDefault="qualified"
+    xmlns:contact="http://www.eit.swiss/contact"
+    xmlns:signature="http://www.eit.swiss/signature">
+    <xs:import namespace="http://www.eit.swiss/contact" schemaLocation="01_Contact.xsd" />
+    <xs:import namespace="http://www.eit.swiss/signature" schemaLocation="01_Signature.xsd" />
+
+    <!-- Simple Elements -->
+    <xs:element name="contract_recieved_at" type="xs:date" />
+
+    <xs:element name="contract_recieved_from" type="xs:string" />
+
+    <xs:element name="work_description" type="xs:string" />
+
+    <xs:element name="notes" type="xs:string" />
+
+
+    <!-- Complex Elements -->
+    <xs:element name="object">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="contact:name_block" />
+                <xs:element ref="contact:adress_block" />
+                <xs:element ref="contact:contact_block" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="client">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="contact:name_block" />
+                <xs:element ref="contact:adress_block" />
+                <xs:element ref="contact:contact_block" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="invoice">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="contact:name_block" />
+                <xs:element ref="contact:adress_block" />
+                <xs:element ref="contact:contact_block" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="time_table">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="row" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="worker_name" type="xs:string" />
+                            <xs:element name="date" type="xs:date" />
+                            <xs:element name="working_time" type="xs:decimal" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="used_materials">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="item" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="description" type="xs:string" />
+                            <xs:element name="article_number" type="xs:string" />
+                            <xs:element name="ammount" type="xs:decimal" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="contract_state">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="work_state">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Work done" />
+                            <xs:enumeration value="Work not done" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="warranty" type="xs:boolean" />
+                <xs:element name="emergency_service" type="xs:boolean" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="signatures">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contractor_signature">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="signature:signature_block" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="customer_signature">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="signature:signature_block" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+
+    <!-- File Structure -->
+    <xs:element name="servicerapport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="object" />
+                <xs:element ref="client" />
+                <xs:element ref="invoice" />
+                <xs:element ref="time_table" />
+                <xs:element ref="used_materials" />
+                <xs:element ref="contract_state" />
+                <xs:element ref="signatures" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicerapport
+    xmlns="http://www.eit.swiss/sina"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.eit.swiss/sina 01_SiNa.xsd"
+    xmlns:contact="http://www.eit.swiss/contact"
+    xmlns:signature="http://www.eit.swiss/signature">
+
+    <object>
+        <contact:name_block>
+            <name>Luca Bützberger</name>
+        </contact:name_block>
+        <contact:adress_block>
+            <street>Weinstegen 184</street>
+            <zip>4936</zip>
+            <city>Kleindietwil</city>
+        </contact:adress_block>
+        <contact:contact_block>
+            <phone>+41 774500111</phone>
+            <email>luca.buetzberger@hftm.ch</email>
+        </contact:contact_block>
+    </object>
+    <client>
+        <contact:name_block>
+            <company>Lucas Vermieter AG</company>
+        </contact:name_block>
+        <contact:adress_block>
+            <street>Irgendwostrasse 42</street>
+            <zip>4242</zip>
+            <city>GenerischesDorf</city>
+        </contact:adress_block>
+        <contact:contact_block>
+            <phone>+41 791231212</phone>
+            <email>vermieter@vermieter.ch</email>
+        </contact:contact_block>
+    </client>
+    <invoice>
+        <contact:name_block>
+            <company>Lucas Vermieter AG</company>
+        </contact:name_block>
+        <contact:adress_block>
+            <street>Irgendwostrasse 42</street>
+            <zip>4242</zip>
+            <city>GenerischesDorf</city>
+        </contact:adress_block>
+        <contact:contact_block>
+            <phone>+41 791231212</phone>
+            <email>vermieter@vermieter.ch</email>
+        </contact:contact_block>
+    </invoice>
+    <time_table>
+        <row>
+            <worker_name>Bob Baumeister</worker_name>
+            <date>2023-09-19</date>
+            <working_time>2.5</working_time>
+        </row>
+        <row>
+            <worker_name>Wendy Wombat</worker_name>
+            <date>2023-09-19</date>
+            <working_time>2.5</working_time>
+        </row>
+    </time_table>
+    <used_materials>
+        <item>
+            <description>3x T13 AP</description>
+            <article_number>127 264 269</article_number>
+            <ammount>1</ammount>
+        </item>
+        <item>
+            <description>TT 3x1.5mm2</description>
+            <article_number>178 264 420</article_number>
+            <ammount>15</ammount>
+        </item>
+    </used_materials>
+    <contract_state>
+        <work_state>Work done</work_state>
+        <warranty>false</warranty>
+        <emergency_service>false</emergency_service>
+    </contract_state>
+    <signatures>
+        <contractor_signature>
+            <signature:signature_block>
+                <location>Madiswil</location>
+                <date>2023-09-17</date>
+                <signature>U0dzc3g2SGhJU2dycXkzNUJhaU1sRAAW</signature>
+            </signature:signature_block>
+        </contractor_signature>
+        <customer_signature>
+            <signature:signature_block>
+                <location>Madiswil</location>
+                <date>2023-09-17</date>
+                <signature>VGhpcyBpcyBhIGJhc2U2NCBCYXNlNjQu</signature>
+            </signature:signature_block>
+        </customer_signature>
+    </signatures>
+</servicerapport>
