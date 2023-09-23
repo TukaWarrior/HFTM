@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sina
     xmlns="http://www.eit.swiss/sina"
-    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.eit.swiss/sina 01_SiNa.xsd"
     xmlns:contact="http://www.eit.swiss/contact"
     xmlns:signature="http://www.eit.swiss/signature">
 
     <client client_type="owner">
-        <contact:name_block>
-            <name>Luca Bützberger</name>
-        </contact:name_block>
-        <contact:adress_block>
-            <street>Weinstegen 184</street>
-            <zip>4936</zip>
-            <city>Kleindietwil</city>
-        </contact:adress_block>
-        <contact:contact_block>
-            <phone>0774500111</phone>
-            <email>luca.buetzberger@hftm.ch</email>
-        </contact:contact_block>
+§ -->
     </client>
-    <contractor type="inspector">
+    <contractor contractor_type="inspector">
         <contact:name_block>
             <company>Elektrokontroll AG</company>
         </contact:name_block>
@@ -34,7 +23,7 @@
             <email>kontakt@elektrokontrollag.ch</email>
         </contact:contact_block>
     </contractor>
-    <location building_type="Residental">
+    <location building_typ="Residental">
         <contact:adress_block>
             <street>Weinstegen 184</street>
             <zip>4936</zip>
@@ -87,16 +76,16 @@
     <signatures>
         <contractor_signature>
             <signature:signature_block>
-                <location>Madiswil</location>
-                <date>2023-09-17</date>
-                <signature>U0dzc3g2SGhJU2dycXkzNUJhaU1sRAAW</signature>
+                <sig_location>Madiswil</sig_location>
+                <sig_date>2023-09-17</sig_date>
+                <sig_signature>U0dzc3g2SGhJU2dycXkzNUJhaU1sRAAW</sig_signature>
             </signature:signature_block>
         </contractor_signature>
         <customer_signature>
             <signature:signature_block>
-                <location>Madiswil</location>
-                <date>2023-09-17</date>
-                <signature>VGhpcyBpcyBhIGJhc2U2NCBCYXNlNjQu</signature>
+                <sig_location>Madiswil</sig_location>
+                <sig_date>2023-09-17</sig_date>
+                <sig_signature>VGhpcyBpcyBhIGJhc2U2NCBCYXNlNjQu</sig_signature>
             </signature:signature_block>
         </customer_signature>
     </signatures>

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="505b54d4-1e2a-4a67-9d25-d9e7b0726048" name="Changes" comment="" />
+    <list default="true" id="505b54d4-1e2a-4a67-9d25-d9e7b0726048" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../SQL/SQL/Aufgab 1Join.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XML/Transferaufgabe/01_SiNa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XML/Transferaufgabe/01_SiNa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XML/Transferaufgabe/01_Signature.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/../XML/Transferaufgabe/01_Signature.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XML/Zeiterfassung Beispiel von Simeon/zeiterfassung.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XML/Zeiterfassung Beispiel von Simeon/zeiterfassung.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

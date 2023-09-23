@@ -7,18 +7,18 @@
 
 
     <!-- Elements -->
-    <xs:element name="location" type="xs:string" />
-    <xs:element name="date" type="xs:date" />
-    <xs:element name="signature" type="xs:base64Binary" />
+    <xs:element name="sig_location" type="xs:string" />
+    <xs:element name="sig_date" type="xs:date" />
+    <xs:element name="sig_signature" type="xs:base64Binary" />
 
 
     <!-- Blocks for easy access-->
     <xs:element name="signature_block">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="location" />
-                <xs:element ref="date" />
-                <xs:element ref="signature" />
+                <xs:element ref="sig_location" />
+                <xs:element ref="sig_date" />
+                <xs:element ref="sig_signature" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
