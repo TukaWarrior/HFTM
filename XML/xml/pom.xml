@@ -15,11 +15,13 @@
 
 
     <dependencies>
+        <!-- API welche den Standard vorgibt -->
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
             <artifactId>jakarta.xml.bind-api</artifactId>
             <version>4.0.1</version>
         </dependency>
+        <!-- DLibrary, welche die Arbeit verrichtet -->
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-impl</artifactId>

@@ -7,4 +7,4 @@ CREATE TABLE department(
 -- ALTER TABLE department ADD
 
 -- INSERT INTO department(id, name) VALUES (1, 'IT');
--- INSERT INTO department(id, name) VALUES (2, '');
+-- INSERT INTO department(id, name) VALUES (2, '');docker run -d --name oradb -p 1521:1521 ghcr.io/hftm-inf/oracle-db:21-db2
