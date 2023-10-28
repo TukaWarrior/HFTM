@@ -59,14 +59,14 @@ public class Lieferschein {
         String info = "";
         info += "Lieferschein\n";
         info += "Kunde: " + this.kunde;
-        String formatierung = "| %-9d | %-28s | %-4d |";
-        info += "\n\r+---------+----------------------------+-----+";
-        info += "\n\r| POSITION: | ARTIKEL:                 | STK: |";
-        info += "\n\r+---------+----------------------------+-----+";
+        String formatierung = "| %-9d | %-24s | %-3d |";
+        info += "\n\r+-----------+--------------------------+-----+";
+        info += "\n\r| POSITION: | ARTIKEL:                 | STK:|";
+        info += "\n\r+-----------+--------------------------+-----+";
         for (LieferscheinPosition pos:positionen){
             info += "\n\r" + String.format(formatierung, pos.getPosNr(), pos.getArtikel(), pos.getMenge());
         }
-        info += "\n\r+---------+----------------------------+-----+";
+        info += "\n\r+-----------+--------------------------+-----+";
         return info;
     }
 }
