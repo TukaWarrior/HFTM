@@ -1,4 +1,4 @@
-package Aufgabe1;
+package JAXB.Aufgabe1_Ausgangslage;
 
 import java.time.LocalDate;
 
