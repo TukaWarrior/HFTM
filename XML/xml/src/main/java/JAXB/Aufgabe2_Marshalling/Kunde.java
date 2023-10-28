@@ -1,12 +1,22 @@
-package JAXB.Aufgabe1_Ausgangslage;
+package JAXB.Aufgabe2_Marshalling;
 
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlTransient;
+
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Kunde {
 
     // Variables
+    @XmlAttribute(name = "nummer")
     private long kundeNr;
     private String name;
+    @XmlTransient
     private String adresse;
+    @XmlTransient
     private String plz;
+    @XmlTransient
     private String ort;
 
     // Constructors
@@ -14,6 +24,7 @@ public class Kunde {
 
     public Kunde(long kundeNr, String name, String adresse, String plz, String ort){
         this.kundeNr = kundeNr;
+        this.name = name;
         this.adresse = adresse;
         this.plz = plz;
         this.ort = ort;
