@@ -1,0 +1,26 @@
+{
+    "kunde": {
+        "name": "Luca",
+        "nummer": 3
+    },
+    "lieferDatum": "01.10.2023",
+    "nummer": 3,
+    "positionen": [
+        {
+            "artikel": {
+                "bezeichner": "Keyboard",
+                "nummer": 1
+            },
+            "menge": 10,
+            "nummer": 1
+        },
+        {
+            "artikel": {
+                "bezeichner": "Mouse",
+                "nummer": 2
+            },
+            "menge": 5,
+            "nummer": 2
+        }
+    ]
+}
