@@ -13,7 +13,7 @@ public class App {
         // JAXB-Kontext erzeugen - erzeug Root Element
         JAXBContext context = JAXBContext.newInstance(Lieferschein.class);
 
-        // Objekt aus XML-Datei
+        // Objekt aus XML-Datei (Unmarshalling)
         Unmarshaller unmarshaller = context.createUnmarshaller();
         Lieferschein lieferscheinA = (Lieferschein) unmarshaller.unmarshal(new File("./src/main/java/JAXB/Aufgabe3_Unmarshalling/lieferscheinA.xml"));
         System.out.println(lieferscheinA);

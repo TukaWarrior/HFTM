@@ -1,5 +1,4 @@
 package JAXB.Aufgabe2_Marshalling;
-//import com.example.XmlElement;
 
 public class LieferscheinPosition{
 

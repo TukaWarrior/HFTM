@@ -20,8 +20,7 @@ public class App {
         JsonbConfig config = new JsonbConfig().withFormatting(true);
         Jsonb jsonb = JsonbBuilder.create(config);
 
-        // Deserialisieren aus JSON Datei
-        // Json aus Datei Lesen
+        // Deserialisieren aus JSON Datei // Json aus Datei Lesen
         JsonReader jsonReader = Json.createReader(new FileReader("./src/main/java/JSONP/Aufgabe01/lieferscheinA.json"));
         JsonObject lieferscheinJson = jsonReader.readObject();
 
