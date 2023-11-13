@@ -7,12 +7,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DbAccess {
-    public static void main(String[] args) throws SQLException {
+	
+	public static void main(String[] args) throws SQLException {
         System.out.println("Hello world!");
-
         // Mit einer Datenbank verbinden.
         Connection connection = null;
-
         try {
             connection = DriverManager.getConnection("jdbc:oracle:thin:vereinuser/vereinuser@localhost:1521:xe");
         } catch (SQLException e) {
@@ -26,7 +25,6 @@ public class DbAccess {
                 }
             }
         }
-
         // Daten abfragen
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("SELECT * FROM Person");
@@ -35,6 +33,5 @@ public class DbAccess {
         }
         resultSet.close();
         statement.close();
-
     }
 }
