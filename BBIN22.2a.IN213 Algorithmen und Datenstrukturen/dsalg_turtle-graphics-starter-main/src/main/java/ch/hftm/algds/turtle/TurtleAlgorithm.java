@@ -14,8 +14,9 @@ public class TurtleAlgorithm {
 		long startTime = System.nanoTime();
 		
 		// Call Aufgabe
-		aufgabe1(turtle);
+		// aufgabe1(turtle);
 		// aufgabe2(turtle);
+		aufgabe3(turtle);
 		// eigeneAufgabe1(turtle);
 
 		// Display turtles path
@@ -52,6 +53,21 @@ public class TurtleAlgorithm {
 				turtle.forward(a2_initialSideLength*index);
 				turtle.left(FULL_CIRCLE/a2_AnglesPerShape);
 			}
+		}
+	}
+
+	// Aufgabe 3
+	private static void aufgabe3(Turtle turtle) {
+		int a3_ShapeSideLength = 50;
+		int a3_maxLoops = 24;
+		int a3_AnglesPerShape = 4;	
+
+		for (int index = 1; index <= a3_maxLoops; index++) {
+			for (int currentIteration = 1; currentIteration <= a3_AnglesPerShape; currentIteration++) {
+				turtle.forward(a3_ShapeSideLength);
+				turtle.left(FULL_CIRCLE/a3_AnglesPerShape);
+			}
+			turtle.left((FULL_CIRCLE/a3_maxLoops));
 		}
 	}
 
