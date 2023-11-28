@@ -1,4 +1,4 @@
-package ch.hftm.algds.turtle;
+package ch.hftm.RecursivesVieleck;
 
 import javafx.application.Application;
 import javafx.scene.Group;

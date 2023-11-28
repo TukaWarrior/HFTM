@@ -8,7 +8,7 @@ public class TurtleAlgorithm {
 
 	public void drawWithTurtle(GraphicsContext gc) {
 		// Turtle-Objekt erzeugen
-		Turtle turtle = new Turtle(gc,250, 250, 0.01);
+		Turtle turtle = new Turtle(gc,250, 250, 0.05);
 
 		// Time when execution started
 		long startTime = System.nanoTime();
@@ -16,7 +16,7 @@ public class TurtleAlgorithm {
 		// Call Aufgabe
 		// aufgabe1(turtle);
 		// aufgabe2(turtle);
-		aufgabe3(turtle);
+		// aufgabe3(turtle);
 		// eigeneAufgabe1(turtle);
 
 		// Display turtles path
@@ -27,8 +27,6 @@ public class TurtleAlgorithm {
 		System.out.println("Total execution time: " + elapsedTime/1000000 + " ms");
 	}
 
-
-	
 	// Aufgabe 1
 	private static void aufgabe1(Turtle turtle) {
 		int a1_sideLength = 50;
