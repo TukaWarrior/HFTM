@@ -1,4 +1,4 @@
-package ch.hftm.RecursivesVieleck;
+package ch.hftm.SymmetrischerBaum;
 
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -29,6 +29,6 @@ public class TurtleApp extends Application {
 		primaryStage.show();
 
 		// Algorithmus starten
-		new RecursivesVieleck().drawWithTurtle(gc);
+		new SymmetrischerBaum().drawWithTurtle(gc);
 	}
 }
