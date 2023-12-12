@@ -1,17 +1,25 @@
 package ch.hftm.editor.service;
 
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Date;
 
 public class FileAccess {
-	
+
+	String defaultPath = defaultPath.to
+
 	public static String getActualDirectoryString() {
 		return "C:/temp";
 	}
 	
 	// TODO: Implementieren für IO Aufgabe Teil 2 b)
 	public static String getActualFileString() {
-		return "";
+		return defaulPath.toString();
 	}
 	
 	// TODO: Implementieren für IO Aufgabe Teil 2 b)
@@ -25,6 +33,18 @@ public class FileAccess {
 	}
 
 	public static void saveFile(String pathString, String content) throws IOException {
+		Path p = Paths.get(pathString);
+		try {
+			BufferedWriter bw = Files.newBufferedWriter(p, Charset.forName("UTF-8"), StandardOpenOption.CREATE,
+					StandardOpenOption.APPEND);
+			bw.write(content, 0, content.length());
+			bw.close();
+		}
+
+		catch (IOException ioe) {
+			System.out.println("Error reading file.");
+			System.exit(0);
+		}
 		throw new UnsupportedOperationException();
 	}
 

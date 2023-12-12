@@ -63,7 +63,7 @@ public class MainApp extends Application {
 
 	/**
 	 * Returns the main stage.
-	 * 
+	 *
 	 * @return
 	 */
 	public Stage getPrimaryStage() {
@@ -73,39 +73,4 @@ public class MainApp extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
-
-	public static void saveFile(String path, String fileContent){
-		Path p = Paths.get(path);
-		try {
-			BufferedWriter bw = Files.newBufferedWriter(p, Charset.forName("UTF-8"), StandardOpenOption.CREATE,
-					StandardOpenOption.APPEND);
-			bw.write(fileContent, 0, fileContent.length());
-			bw.close();
-		} catch (IOException ioe) {
-				System.out.println("Error reading file.");
-				System.exit(0);;
-		}
-
-		public static String loadFile(String path){
-			String line = "", fileContent = "";
-			Path p = Paths.get(path);
-			try {
-				BufferedReader fileInput = Files.newBufferedReader(p, Charset.forName("UTF-8"));
-				while (line != null){
-					line = fileInput.readLine();
-					if (line != null){
-						fileContent += line;
-					}
-					fileInput.close();
-				}
-			} catch (EOFException eofe) {
-				System.out.println("No more lines to read.");
-				System.exit(0);
-			} catch (IOException ioe) {
-				System.out.println("Error reading file.");
-				System.exit(0);
-			}
-			return fileContent;
-		}
-
 }
