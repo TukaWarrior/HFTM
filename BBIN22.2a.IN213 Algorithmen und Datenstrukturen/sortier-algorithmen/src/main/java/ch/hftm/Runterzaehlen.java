@@ -2,15 +2,13 @@ package ch.hftm;
 
 public class Runterzaehlen {
     public static void main(String[] args) {
-        // System.out.println(runterzaehlen2(100));
-        // runterzaehlen2(100000);
+        // System.out.println(runterzaehlen(100));
+        System.out.println(runterzaehlen3(2));
+        // runterzaehlen2(100);
 
-        for (int i = 0; i < 1000; i++){
-            System.out.print(i);
-        }
-
-        
-        // System.out.println("Hello world!");
+        // for (int i = 0; i < 10; i++){
+        //     System.out.print(i);
+        // }
     }
 
     private static String runterzaehlen(int zahl){
@@ -26,5 +24,13 @@ public class Runterzaehlen {
                 System.out.println(zahl);
                 runterzaehlen2(zahl-1);
         }
+    }
+
+    // Nicht lineare Rekursion 
+    private static String runterzaehlen3(int zahl){
+        if (zahl > 0){
+            return zahl + " " + runterzaehlen3(zahl-1) + "|" + runterzaehlen3(zahl-1);
+        }
+        return "" + zahl;
     }
 }

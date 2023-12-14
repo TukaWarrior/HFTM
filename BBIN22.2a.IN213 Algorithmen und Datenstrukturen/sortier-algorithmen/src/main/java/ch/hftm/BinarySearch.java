@@ -32,7 +32,7 @@ public class BinarySearch {
         while (high >= low) {
             int middle = (low + high) / 2; // Middle index
             if (data[middle] == target) {
-                return middle; // Target value was found
+                return middle; // Target target was found
             }
             if (data[middle] < target) {
                 low = middle + 1;
@@ -42,6 +42,6 @@ public class BinarySearch {
             }
         }
     
-        return -1; // The value was not found
+        return -1; // The target was not found
     }
 }
