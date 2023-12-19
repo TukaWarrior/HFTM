@@ -27,7 +27,6 @@ public class EditorController {
 			} else {
 				this.actualPathText.setText("Letzter Speicherort (vom " + FileAccess.getLastSaveDate() + "): "
 						+ FileAccess.getActualDirectoryString());
-				System.out.println(FileAccess.getLastSaveDate());
 				this.pathField.setText(FileAccess.getActualFileString());
 			}
 		} catch (Exception e) {
@@ -53,11 +52,9 @@ public class EditorController {
 			alert.showAndWait();
 		}
 		// TODO: Auskommentieren für Aufgabe Teil 2 c)
-		this.actualPathText.setText("Aktueller-Pfad: " + this.pathField.getText());
-		this.pathField.setText(FileAccess.getActualFileString());
-//		this.actualPathText.setText("Aktueller-Pfad: " + FileAccess.getActualDirectoryString());
-//		this.pathField.setText(FileAccess.getActualFileString());
-
+		// this.actualPathText.setText("Aktueller-Pfad: " +
+		// FileAccess.getActualDirectoryString());
+		// this.pathField.setText(FileAccess.getActualFileString());
 	}
 
 	@FXML
@@ -73,9 +70,8 @@ public class EditorController {
 			alert.showAndWait();
 		}
 		// TODO: Auskommentieren für Aufgabe Teil 2 c)
-		this.actualPathText.setText("Aktueller-Pfad: " + this.pathField.getText());
-		this.pathField.setText(FileAccess.getActualFileString());
-//		this.actualPathText.setText("Aktueller-Pfad: " + FileAccess.getActualDirectoryString());
-//		this.pathField.setText(FileAccess.getActualFileString());
+		// this.actualPathText.setText("Aktueller-Pfad: " +
+		// FileAccess.getActualDirectoryString());
+		// this.pathField.setText(FileAccess.getActualFileString());
 	}
 }

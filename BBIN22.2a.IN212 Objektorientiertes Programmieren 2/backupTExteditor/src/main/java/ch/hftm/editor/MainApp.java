@@ -1,14 +1,28 @@
 package ch.hftm.editor;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.EOFException;
 import java.io.IOException;
 
 import javafx.application.Application;
+
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.nio.charset.Charset;
+import java.nio.file.*;
+
 public class MainApp extends Application {
+
+	@FXML
+//	private Button saveFile;
+	@FXML
+//	private Button readFile;
 
 	private Stage primaryStage;
 	private AnchorPane editorView;
@@ -49,7 +63,7 @@ public class MainApp extends Application {
 
 	/**
 	 * Returns the main stage.
-	 * 
+	 *
 	 * @return
 	 */
 	public Stage getPrimaryStage() {
