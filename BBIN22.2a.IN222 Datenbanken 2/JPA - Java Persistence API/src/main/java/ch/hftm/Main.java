@@ -1,5 +1,12 @@
 package ch.hftm;
 
+import java.time.LocalDate;
+import java.util.List;
+
+import ch.hftm.entities.Funktion;
+import ch.hftm.entities.Person;
+import ch.hftm.persistence.repositories.FunktionRepository;
+import ch.hftm.persistence.repositories.PersonRepository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
@@ -15,7 +22,7 @@ public class Main {
         entityManager.getTransaction().begin();
 
         // In diesem Block kannst du den entityManager verwenden :-)
-        
+		funktionDbZugriffe(entityManager);
 
         entityManager.getTransaction().commit();
         entityManager.close();
@@ -24,9 +31,11 @@ public class Main {
 
     
 
-    private static void funktionDbZugriffe() {
+    private static void funktionDbZugriffe(EntityManager entityManager) {
 		entityManager.getTransaction().begin();
+		PersonRepository personRepository = new PersonRepository(entityManager);
 		FunktionRepository funktionRepository = new FunktionRepository(entityManager);
+		StatusRepository statusRepository = new StatusRepository(entityManager);
 		
 		// Funktion hinzufügen
 		Funktion neueFunktion = new Funktion();
@@ -62,29 +71,32 @@ public class Main {
 			System.out.println("Funktion " + funktion.getId() + ": "
 					+ funktion.getBezeichner());
 		}
+
+		// Person hinzufügen
+		Status status1 = statusRepository.findById(1);
+		Person neuePerson = new Person("Repository","Person","JPA-Str. 2.1","2006", "JSR 220 Expert Group", false, status1);
+		neuePerson.setEintritt(LocalDate.now());
+		personRepository.insert(neuePerson);
+		System.out.println("Neue Person-Id: " + neuePerson.getId());
+		
+		// Person entfernen
+		personRepository.delete(neuePerson.getId());
+		System.out.println("Neue Person entfernt");
+		
+		// Person
+		Person person1 = personRepository.findById(1);
+		if (person1 != null) {
+			System.out.println("Person mit ID 1: " + person1);
+		}
+		
+		// Alle Personen auslesen
+		List<Person> personList = personRepository.getAll();
+		System.out.println("Anzahl Personen: " + personList.size());
+		for (Person person : personList) {
+			System.out.println("Person: " + person);
+		}
+
 		
 		entityManager.getTransaction().commit();
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

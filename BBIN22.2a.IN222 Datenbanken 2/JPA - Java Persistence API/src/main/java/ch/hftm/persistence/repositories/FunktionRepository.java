@@ -1,11 +1,11 @@
-package ch.hftm;
+package ch.hftm.persistence.repositories;
 
 import java.util.List;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 
-import ch.hftm.Funktion;
+import ch.hftm.entities.Funktion;
 
 public class FunktionRepository {
 	EntityManager entityManager;
@@ -30,7 +30,7 @@ public class FunktionRepository {
 	
 	public List<Funktion> getAll() {
 		TypedQuery<Funktion> query = this.entityManager
-				.createQuery("select f from Funktion f", Funktion.class);
+				.createQuery("select f from Funktion f order by f.bezeichner", Funktion.class);
 		return query.getResultList();
 	}
 	
