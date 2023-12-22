@@ -1,0 +1,16 @@
+### Eclipse Core ### 
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Eclipse Core
+.project
+
+# Eclipse Settings
+.settings/
+
+# Maven build
+/target
+dependency-reduced-pom.xml
+
+# VS Code
+.vscode

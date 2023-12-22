@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b532cc3-a71c-4832-bb2a-be957e42cd8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/hftm/editor/service/LastSaveInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/.idea/Text-Editor-Ausgangslage-Maven.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/src/main/java/ch/hftm/editor/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/src/main/java/ch/hftm/editor/MainAppLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/src/main/java/ch/hftm/editor/service/FileAccess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/src/main/java/ch/hftm/editor/view/EditorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/src/main/resources/fxml/EditorView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/target/classes/ch/hftm/editor/MainApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/target/classes/ch/hftm/editor/MainAppLauncher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/target/classes/ch/hftm/editor/service/FileAccess.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/target/classes/ch/hftm/editor/view/EditorController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backupTExteditor/target/classes/fxml/EditorView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hftm/editor/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hftm/editor/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hftm/editor/service/FileAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hftm/editor/service/FileAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hftm/editor/view/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hftm/editor/view/EditorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/EditorView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/EditorView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/hftm/editor/MainApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/hftm/editor/MainAppLauncher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/hftm/editor/service/FileAccess.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/hftm/editor/view/EditorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/EditorView.fxml" beforeDir="false" />
-    </list>
+    <list default="true" id="3b532cc3-a71c-4832-bb2a-be957e42cd8e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
