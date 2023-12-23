@@ -1,4 +1,4 @@
-package ch.hftm;
+package ch.hftm.Stack;
 
 public class ArrayStack {
     public static final int STACK_SIZE = 5;

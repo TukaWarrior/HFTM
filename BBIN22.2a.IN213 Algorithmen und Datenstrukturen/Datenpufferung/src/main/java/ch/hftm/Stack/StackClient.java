@@ -1,4 +1,4 @@
-package ch.hftm;
+package ch.hftm.Stack;
 
 public class StackClient {
     
