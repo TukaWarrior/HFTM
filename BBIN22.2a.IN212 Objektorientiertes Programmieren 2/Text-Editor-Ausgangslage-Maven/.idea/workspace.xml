@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b532cc3-a71c-4832-bb2a-be957e42cd8e" name="Changes" comment="" />
+    <list default="true" id="3b532cc3-a71c-4832-bb2a-be957e42cd8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercises/target/classes/ch/hftm/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercises/target/classes/ch/hftm/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercises/target/classes/ch/hftm/RegularExpressions/Aufgabe2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercises/target/classes/ch/hftm/RegularExpressions/Aufgabe2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercises/target/classes/ch/hftm/RegularExpressions/Aufgabe2keys.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercises/target/classes/ch/hftm/RegularExpressions/Aufgabe3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercises/target/classes/ch/hftm/RegularExpressions/Aufgabe3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercises/target/classes/ch/hftm/RegularExpressions/Aufgabe3Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercises/target/classes/ch/hftm/RegularExpressions/Aufgabe3Lesson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercises/target/classes/ch/hftm/Strings_verarbeiten/StringManipulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercises/target/classes/ch/hftm/Strings_verarbeiten/StringManipulation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/src/main/java/ch/hftm/Queue/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/src/main/java/ch/hftm/Queue/ArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/src/main/java/ch/hftm/Queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/src/main/java/ch/hftm/Queue/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/src/main/java/ch/hftm/Queue/QueueClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/src/main/java/ch/hftm/Queue/QueueClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/target/classes/ch/hftm/ArrayStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/target/classes/ch/hftm/Queue/ArrayQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/target/classes/ch/hftm/Queue/ArrayQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/target/classes/ch/hftm/Queue/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/target/classes/ch/hftm/Queue/Queue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/target/classes/ch/hftm/Queue/QueueClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBIN22.2a.IN213 Algorithmen und Datenstrukturen/Datenpufferung/target/classes/ch/hftm/Queue/QueueClient.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,10 +56,38 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lucab/Repositories/HFTM/BBIN22.2a.IN212 Objektorientiertes Programmieren 2/Text-Editor-Ausgangslage-Maven&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lucab/Repositories/HFTM/BBIN22.2a.IN212 Objektorientiertes Programmieren 2/Text-Editor-Ausgangslage-Maven/src/main/resources&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucab\Repositories\HFTM\BBIN22.2a.IN212 Objektorientiertes Programmieren 2\Text-Editor-Ausgangslage-Maven\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Text-Editor-Ausgangslage-Maven" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Text-Editor-Ausgangslage-Maven" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

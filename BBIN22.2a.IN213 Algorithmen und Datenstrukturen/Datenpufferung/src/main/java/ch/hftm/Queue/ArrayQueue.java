@@ -14,9 +14,13 @@ public class ArrayQueue implements Queue{
             throw new ArrayIndexOutOfBoundsException();
         }
 
-        writeIdx = writeIdx % ARRAYLEN;
-        container[++writeIdx] = o;
+        container[writeIdx++ % ARRAYLEN] = o;
         nbrOfItems++;
+
+        // Original code. Unsure if working properly.
+        // writeIdx = writeIdx % ARRAYLEN;
+        // container[++writeIdx] = o;
+        // nbrOfItems++;
     }
 
     @Override
@@ -24,18 +28,24 @@ public class ArrayQueue implements Queue{
         if (nbrOfItems <= 0) {
             return null;
         }
-        nbrOfItems--;
+
+        // Original code. Unsure if working properly. 
+        // nbrOfItems--;
         // Object value = container[readIdx];
-        readIdx = readIdx % ARRAYLEN;
-        return container [++readIdx];
+        // readIdx = readIdx % ARRAYLEN;
+        // return container [++readIdx];
+        
+        Object value = container[readIdx];
+        readIdx = (readIdx + 1) % ARRAYLEN;
+        nbrOfItems--;
+        return value;
     }
 
-    public void isEmpty() {
-
+    public boolean isEmpty() {
+        return nbrOfItems == 0;
     }
 
     public boolean isFull(){
         return nbrOfItems == ARRAYLEN;
     }
-    
 }

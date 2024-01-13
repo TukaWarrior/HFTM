@@ -13,6 +13,8 @@ public class QueueClient {
         System.out.println(q.remove());
         q.insert(30);
         System.out.println(q.remove());
+        q.insert(35);
+        System.out.println(q.remove());
         System.out.println(q.remove());
         System.out.println(q.remove());
         System.out.println(q.remove());
