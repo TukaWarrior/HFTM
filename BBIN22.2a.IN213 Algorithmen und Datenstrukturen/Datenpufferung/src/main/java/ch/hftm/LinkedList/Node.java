@@ -1,4 +1,4 @@
-package ch.hftm.Node;
+package ch.hftm.LinkedList;
 
 public class Node {
     
