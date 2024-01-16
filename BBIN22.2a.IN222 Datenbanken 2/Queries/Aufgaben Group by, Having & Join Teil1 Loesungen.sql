@@ -1,4 +1,4 @@
--- Aufgabe 1: group by, having
+<-- Aufgabe 1: group by, having
 -- a) 
 -- Ermitteln Sie das Total sämtlicher Spenden, welche der Verein seit Anfangs 2015 erhalten hat.
 SELECT sum(betrag) AS "Spendentotal"
