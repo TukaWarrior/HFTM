@@ -1,11 +1,10 @@
-package ch.hftm.CreditLineareListe;
+package ch.hftm.CreditLineareListe.Aufgabe3;
 
-public class TestSimpleLinList {
+public class TestLinList {
     public static void main(String[] args) {
-        // list.testStructure();
 
         System.out.println("TEIL 0: Konstruktor + isEmpty()");
-        SimpleLinList list = new SimpleLinList();
+        LinList list = new LinList();
         System.out.println("Ist Liste leer? " + list.isEmpty());
         System.out.println();
 
@@ -50,5 +49,11 @@ public class TestSimpleLinList {
         System.out.println("TEIL 7: Entferne letztes Objekt mit removeLast()");
         list.removeLast();
         System.out.println(list.toString());
+        System.out.println();
+
+        System.out.println("TEIL 8: Entferne alle Objekte mit clear()");
+        list.clear();
+        System.out.println(list.toString());
+        System.out.println();
     }
 }
