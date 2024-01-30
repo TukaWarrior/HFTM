@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Text-Editor (1)" />
         <module name="demo" />
+        <module name="Text-Editor (2)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Text-Editor" target="11" />
-      <module name="Text-Editor (1)" target="11" />
-      <module name="Text-Editor (2)" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
