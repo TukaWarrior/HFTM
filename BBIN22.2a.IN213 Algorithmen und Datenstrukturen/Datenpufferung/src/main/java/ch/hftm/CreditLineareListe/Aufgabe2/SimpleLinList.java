@@ -1,4 +1,4 @@
-package ch.hftm.CreditLineareListe;
+package ch.hftm.CreditLineareListe.Aufgabe2;
 public class SimpleLinList {
 
 //    Instance Variables
