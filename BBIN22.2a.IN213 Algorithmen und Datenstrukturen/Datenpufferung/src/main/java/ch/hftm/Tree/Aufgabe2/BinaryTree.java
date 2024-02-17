@@ -1,4 +1,4 @@
-package ch.hftm.Tree.Aufgabe1;
+package ch.hftm.Tree.Aufgabe2;
 import java.util.NoSuchElementException;
 
 /**
@@ -174,77 +174,72 @@ public class BinaryTree<E extends Comparable<E>> {
 	 * binären Suchbaum, sofern es vorhanden ist.
 	 */
 	public void remove(E data) {
-		TreeNode<E> parent = null; // Dient zur Speicherung des Elternknotens des zu entfernenden Knotens.
-		TreeNode<E> node = root; // Wurzel des Baumes.
-		TreeNode<E> child = null; // Hilfsvariable für den Fall, dass der zu löschende Knoten zwei Kinder hat.
-		TreeNode<E> temp = null; // Temporäre Variable für die Umstrukturierung des Baumes.
-
-		// Schritt 1: Suche den zu löschenden Knoten und seinen Elternknoten.
+		TreeNode<E> parent = null;
+		TreeNode<E> node = root;
+		TreeNode<E> child = null;
+		TreeNode<E> temp = null;
+		
 		while (node != null && data.compareTo(node.data) != 0) {
-			parent = node; // Aktualisiere den Elternknoten auf den aktuellen Knoten.
-			if (data.compareTo(node.data) < 0) { // Gehe nach links, wenn das Datenobjekt kleiner ist.
+			parent = node;
+			if (data.compareTo(node.data) < 0) {
 				node = node.left;
-			} else { // Gehe nach rechts, wenn das Datenobjekt größer ist.
+			} else {
 				node = node.right;
-			}
+				}
 		}
-		// Wenn der Knoten nicht gefunden wurde, werfe eine Exception.
-		if (node == null)
-			// Behandlung des Falls, wenn der zu entfernende Knoten die Wurzel ist
-			throw new NoSuchElementException("Das zu entfernende Nutzdatum ist nicht im " + "Baum eingelagert!");
 
-		// Schritt 2: Entferne den Knoten aus dem Baum.
-		if (parent == null) { // Der zu entfernende Knoten ist die Wurzel.
-			if (node.left == null) { // Nur ein rechtes Kind vorhanden.
-				root = node.right; // Das rechte Kind wird zur Wurzel.
-			} else if (node.right == null) { // Nur ein linkes Kind vorhanden.
-				root = node.left; // Das linke Kind wird zur Wurzel.
-			} else { // Die Wurzel hat zwei Kinder. Suche den in-order Nachfolger.
+		if (node == null) {
+			throw new NoSuchElementException("Das zu entfernende Nutzdatum ist nicht im " + "Baum eingelagert!");
+		}
+		
+		if (parent == null) {
+			if (node.left == null) {
+				root = node.right;
+			} else if (node.right == null) {
+				root = node.left;
+			} else {
 				temp = node;
 				child = node.right;
-				while (child.left != null) { // Finde den am weitesten links liegenden Knoten im rechten Unterbaum.
+				while (child.left != null) {
 					temp = child;
 					child = child.left;
 				}
-				// Umstrukturieren, um den in-order Nachfolger an die Stelle der ursprünglichen Wurzel zu setzen.
 				if (node != temp) {
 					temp.left = child.right;
 					child.right = root.right;
 				}
 				child.left = root.left;
-				root = child; // Setze den in-order Nachfolger als neue Wurzel.
+				root = child;
 			}
-		} else { // Der zu entfernende Knoten ist nicht die Wurzel.
-			if (node.left == null) {
-				if (parent.left == node) {
-					parent.left = node.right;
-				} else {
-					parent.right = node.right;
-				}
-			} else if (node.right == null) {
-				if (parent.left == node) {
-					parent.left = node.left;
-				} else {
-					parent.right = node.left;
-				}
-			} else { // Der Knoten hat zwei Kinder. Suche den in-order Nachfolger.
-				temp = node;
-				child = node.right;
-				while (child.left != null) {
-					temp = child;
-					child = child.left; // Gehe zum linksten Knoten
-				}
-				child.left = node.left;
-
-				if (node != temp) { // Umstrukturieren, um den in-order Nachfolger an die Stelle des zu löschenden Knotens zu setzen.
-					temp.left = child.right;
-					child.right = node.right;
-				}
-				if (parent.right == node) { // Ersetze den zu entfernenden Knoten durch den in-order Nachfolger.
-					parent.right = child;
-				} else {
-					parent.left = child;
-				}
+		} else
+		if (node.left == null) {
+			if (parent.left == node) {
+				parent.left = node.right;
+			} else {
+				parent.right = node.right;
+			}
+		} else if (node.right == null) {
+			if (parent.left == node) {
+				parent.left = node.left;
+			} else {
+				parent.right = node.left;
+			}
+		} else {
+			temp = node;
+			child = node.right;
+			while (child.left != null) {
+				temp = child;
+				child = child.left;
+			}
+			child.left = node.left;
+			if (node != temp) {
+				temp.left = child.right;
+				child.right = node.right;
+			}
+			if (parent.right == node) {
+				parent.right = child;
+			} else {
+				parent.left = child;
 			}
 		}
 	}
