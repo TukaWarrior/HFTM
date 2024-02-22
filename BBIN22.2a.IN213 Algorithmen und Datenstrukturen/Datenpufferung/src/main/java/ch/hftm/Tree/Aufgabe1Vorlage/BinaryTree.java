@@ -1,4 +1,5 @@
 package ch.hftm.Tree.Aufgabe1Vorlage;
+
 import java.util.NoSuchElementException;
 
 /**
@@ -157,7 +158,7 @@ public class BinaryTree<E extends Comparable<E>> {
 		}
 		if (parent == null)
 			root = new TreeNode<E>((E) data);
-		else if (data.compareTo(parent.data) < 0) //Vergleicht data vom Objekt data mit data vom Parent Objekt.
+		else if (data.compareTo(parent.data) < 0)
 			parent.left = new TreeNode<E>((E) data);
 		else
 			parent.right = new TreeNode<E>((E) data);

@@ -1,4 +1,5 @@
-package ch.hftm.Tree.Aufgabe1;
+package ch.hftm.Tree.Aufgabe3;
+
 import java.util.NoSuchElementException;
 
 /**
@@ -74,8 +75,14 @@ public class BinaryTree<E extends Comparable<E>> {
 	private String toStringInorder(TreeNode<E> node) {
 		String treeStrg = "";
 
-		// .......
-
+		if (node == null) {
+			// Rückgabe wenn Liste leer
+			return treeStrg;
+		}
+		String leftData = toStringInorder(node.left);
+		String currentData = node.data + ", ";
+		String rightData = toStringInorder(node.right);
+		treeStrg = leftData + currentData + rightData;
 		return treeStrg;
 	}
 
@@ -86,7 +93,13 @@ public class BinaryTree<E extends Comparable<E>> {
 	private String toStringPreorder(TreeNode<E> node) {
 		String treeStrg = "";
 
-		// .......
+		if (node == null) {
+			// Rückgabe wenn Liste leer
+			return treeStrg;
+		}
+		treeStrg = node.data + ", ";
+		treeStrg += toStringPreorder(node.left);
+		treeStrg += toStringPreorder(node.right);
 
 		return treeStrg;
 	}
@@ -98,8 +111,14 @@ public class BinaryTree<E extends Comparable<E>> {
 	private String toStringPostorder(TreeNode<E> node) {
 		String treeStrg = "";
 
-		// .......
-
+		if (node == null) {
+			// Rückgabe wenn Liste leer
+			return treeStrg;
+		}
+		String leftData = toStringPostorder(node.left);
+		String rightData = toStringPostorder(node.right);
+		String currentData = node.data + ", ";
+		treeStrg = leftData + rightData + currentData;
 		return treeStrg;
 	}
 
@@ -140,119 +159,100 @@ public class BinaryTree<E extends Comparable<E>> {
 	/**
 	 * Fügt ein Datenelement an der korrekten Position im binären Suchbaum ein.
 	 */
-
 	public void insert(E data) {
-		TreeNode<E> parent = null; // Initialisiert partent als null.
-		TreeNode<E> node = root; // Erzeugt die Wurzel des Baumes.
-		int compareResult; // Variabel zum Speichern des Vergleichergebnis.
-
-		// Durchlaufe den Baum bis zu einem Blattknoten, um die korrekte Position für das neue Element zu finden.
+		TreeNode<E> parent = null;
+		TreeNode<E> node = root;
+		int compareResult;
 		while (node != null) {
-			parent = node; // Setze den Elternknoten auf den aktuellen Knoten.
-			compareResult = data.compareTo(node.data);  // Vergleiche das einzufügende Element mit dem aktuellen Knoten.
-
-			if (compareResult < 0) { // Wenn einzufügende Element kleiner ist, gehe nach links.
+			parent = node;
+			compareResult = data.compareTo(node.data);
+			if (compareResult < 0)
 				node = node.left;
-			} else if (compareResult > 0) { // Wenn einzufügende Element größer ist, gehe nach rechts.
+			else if (compareResult > 0)
 				node = node.right;
-			} else { // Wenn das Element bereits im Baum ist, werfe eine Exception.
-				throw new IllegalArgumentException("Datenelement bereits im Baum eingefügt!");
-			}
+			else
+				throw new IllegalArgumentException(
+						"Datenelement bereits im Baum eingefügt!");
 		}
-
-		// Nachdem die korrekte Position gefunden wurde, füge das neue Element ein.
-		if (parent == null) { // Wenn der Baum leer ist, setze das neue Element als Wurzel des Baumes.
+		if (parent == null)
 			root = new TreeNode<E>((E) data);
-		} else if (data.compareTo(parent.data) < 0) { // Wenn das neue Element kleiner als der Elternknoten ist, füge es links ein.
+		else if (data.compareTo(parent.data) < 0)
 			parent.left = new TreeNode<E>((E) data);
-		} else { // Wenn das neue Element größer oder gleich dem Elternknoten ist, füge es rechts ein.
-		}
+		else
+			parent.right = new TreeNode<E>((E) data);
 	}
-
 
 	/**
 	 * Entfernt das spezifizierte Datenelement unter Wahrung der Ordnung aus dem
 	 * binären Suchbaum, sofern es vorhanden ist.
 	 */
 	public void remove(E data) {
-		TreeNode<E> parent = null; // Dient zur Speicherung des Elternknotens des zu entfernenden Knotens.
-		TreeNode<E> node = root; // Wurzel des Baumes.
-		TreeNode<E> child = null; // Hilfsvariable für den Fall, dass der zu löschende Knoten zwei Kinder hat.
-		TreeNode<E> temp = null; // Temporäre Variable für die Umstrukturierung des Baumes.
-
-		// Schritt 1: Suche den zu löschenden Knoten und seinen Elternknoten.
+		TreeNode<E> parent = null;
+		TreeNode<E> node = root;
+		TreeNode<E> child = null;
+		TreeNode<E> temp = null;
+		
 		while (node != null && data.compareTo(node.data) != 0) {
-			parent = node; // Aktualisiere den Elternknoten auf den aktuellen Knoten.
-			if (data.compareTo(node.data) < 0) { // Gehe nach links, wenn das Datenobjekt kleiner ist.
+			parent = node;
+			if (data.compareTo(node.data) < 0)
 				node = node.left;
-			} else { // Gehe nach rechts, wenn das Datenobjekt größer ist.
+			else
 				node = node.right;
-			}
 		}
-		// Wenn der Knoten nicht gefunden wurde, werfe eine Exception.
 		if (node == null)
-			// Behandlung des Falls, wenn der zu entfernende Knoten die Wurzel ist.
-			throw new NoSuchElementException("Das zu entfernende Nutzdatum ist nicht im " + "Baum eingelagert!");
-
-		// Schritt 2: Entferne den Knoten aus dem Baum.
-		if (parent == null) { // Der zu entfernende Knoten ist die Wurzel.
-			if (node.left == null) { // Nur ein rechtes Kind vorhanden.
-				root = node.right; // Das rechte Kind wird zur Wurzel.
-			} else if (node.right == null) { // Nur ein linkes Kind vorhanden.
-				root = node.left; // Das linke Kind wird zur Wurzel.
-			} else { // Die Wurzel hat zwei Kinder. Suche den in-order Nachfolger.
+			
+			throw new NoSuchElementException(
+					"Das zu entfernende Nutzdatum ist nicht im "
+							+ "Baum eingelagert!");
+		
+		if (parent == null) {
+			if (node.left == null)
+				root = node.right;
+			else if (node.right == null)
+				root = node.left;
+			else {
 				temp = node;
 				child = node.right;
-				while (child.left != null) { // Finde den am weitesten links liegenden Knoten im rechten Unterbaum.
+				while (child.left != null) {
 					temp = child;
 					child = child.left;
 				}
-				// Umstrukturieren, um den in-order Nachfolger an die Stelle der ursprünglichen Wurzel zu setzen.
 				if (node != temp) {
 					temp.left = child.right;
 					child.right = root.right;
 				}
 				child.left = root.left;
-				root = child; // Setze den in-order Nachfolger als neue Wurzel.
+				root = child;
 			}
-		} else { // Der zu entfernende Knoten ist nicht die Wurzel.
-			if (node.left == null) {
-				if (parent.left == node) {
-					parent.left = node.right;
-				} else {
-					parent.right = node.right;
-				}
-			} else if (node.right == null) {
-				if (parent.left == node) {
-					parent.left = node.left;
-				} else {
-					parent.right = node.left;
-				}
-			} else { // Der Knoten hat zwei Kinder. Suche den in-order Nachfolger.
-				temp = node;
-				child = node.right;
-				while (child.left != null) {
-					temp = child;
-					child = child.left; // Gehe zum linksten Knoten
-				}
-				child.left = node.left;
-
-				if (node != temp) { // Umstrukturieren, um den in-order Nachfolger an die Stelle des zu löschenden Knotens zu setzen.
-					temp.left = child.right;
-					child.right = node.right;
-				}
-				if (parent.right == node) { // Ersetze den zu entfernenden Knoten durch den in-order Nachfolger.
-					parent.right = child;
-				} else {
-					parent.left = child;
-				}
+		} else
+		if (node.left == null)
+			if (parent.left == node)
+				parent.left = node.right;
+			else
+				parent.right = node.right;
+		else if (node.right == null)
+			if (parent.left == node)
+				parent.left = node.left;
+			else
+				parent.right = node.left;
+		else {
+			temp = node;
+			child = node.right;
+			while (child.left != null) {
+				temp = child;
+				child = child.left;
 			}
+			child.left = node.left;
+			if (node != temp) {
+				temp.left = child.right;
+				child.right = node.right;
+			}
+			if (parent.right == node)
+				parent.right = child;
+			else
+				parent.left = child;
 		}
 	}
-
-
-
-
 
 	/**
 	 * Erzeugt eine Stringrepräsentation des binären Suchbaumes.

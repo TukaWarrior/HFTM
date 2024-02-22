@@ -1,4 +1,4 @@
-package ch.hftm.Tree.Aufgabe1Vorlage;
+package ch.hftm.Tree.Aufgabe3;
 
 import java.io.IOException;
 import java.util.NoSuchElementException;
@@ -36,7 +36,7 @@ public class TestBinaryTree {
 		Scanner in = new Scanner(System.in);
 
 		// binären Baum erzeugen
-		BinaryTree<Integer> container = new BinaryTree<Integer>();
+		ch.hftm.Tree.Aufgabe3.BinaryTree<Integer> container = new ch.hftm.Tree.Aufgabe3.BinaryTree<Integer>();
 
 		// Testen der Funktionalitäten
 		System.out.println("\n\n");
@@ -104,9 +104,9 @@ public class TestBinaryTree {
 			System.out.println("\nTraversierungen:");
 			System.out.println("---------------");
 			System.out.print("preorder:   ");
-			System.out.println(container.traverse(BinaryTree.PREORDER));
+			System.out.println(container.traverse(ch.hftm.Tree.Aufgabe3.BinaryTree.PREORDER));
 			System.out.print("inorder:    ");
-			System.out.println(container.traverse(BinaryTree.INORDER));
+			System.out.println(container.traverse(ch.hftm.Tree.Aufgabe3.BinaryTree.INORDER));
 			System.out.print("postorder:  ");
 			System.out.println(container.traverse(BinaryTree.POSTORDER));
 			System.out.println("\n\n");
