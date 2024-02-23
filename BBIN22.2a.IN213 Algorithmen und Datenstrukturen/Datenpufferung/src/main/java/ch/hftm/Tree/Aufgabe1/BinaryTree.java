@@ -166,6 +166,7 @@ public class BinaryTree<E extends Comparable<E>> {
 		} else if (data.compareTo(parent.data) < 0) { // Wenn das neue Element kleiner als der Elternknoten ist, füge es links ein.
 			parent.left = new TreeNode<E>((E) data);
 		} else { // Wenn das neue Element größer oder gleich dem Elternknoten ist, füge es rechts ein.
+			parent.right = new TreeNode<E>((E) data);
 		}
 	}
 

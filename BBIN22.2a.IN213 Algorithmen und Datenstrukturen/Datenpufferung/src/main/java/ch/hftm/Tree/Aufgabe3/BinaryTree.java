@@ -86,6 +86,37 @@ public class BinaryTree<E extends Comparable<E>> {
 		return treeStrg;
 	}
 
+//	private String toStringInorder(TreeNode<E> node) {
+//		String treeStrg = "";
+//		if (node != null) {
+//			treeStrg += toStringInorder(node.left);
+//			treeStrg += node + " ";
+//			treeStrg += toStringInorder(node.right);
+//		}
+//		return treeStrg;
+//	}
+
+//	private String toStringPreorder(TreeNode<E> node) {
+//		String treeStrg = "";
+//		if (node != null) {
+//			treeStrg += node + " ";
+//			treeStrg += toStringPreorder(node.left);
+//			treeStrg += toStringPreorder(node.right);
+//		}
+//		return treeStrg;
+//	}
+
+//	private String toStringPostorder(TreeNode<E> node) {
+//		String treeStrg = "";
+//		if (node != null) {
+//			treeStrg += toStringPostorder(node.left);
+//			treeStrg += toStringPostorder(node.right);
+//			treeStrg += node + " ";
+//		}
+//		return treeStrg;
+//	}
+
+
 	/**
 	 * Traversiert den Suchbaum preorder und erzeugt eine Stringrepäsentation
 	 * der angetroffenen Nutzdatenelemente.
