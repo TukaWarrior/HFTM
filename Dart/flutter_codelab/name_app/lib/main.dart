@@ -125,3 +125,14 @@ class BigCard extends StatelessWidget {
     );
   }
 }
+
+// class GeneratorPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     var appState = context.watch<MyAppState>();
+//     var pair = appState.current;
+
+
+//     // return const Placeholder();
+//   }
+// }
